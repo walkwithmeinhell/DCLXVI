@@ -1,0 +1,133 @@
+DCLXVI — MANAGEMENT INFORMATION SYSTEMS
+
+Purpose
+-------
+This file grounds DCLXVI in supplied MIS teaching material. It covers introductory information
+systems, data/knowledge management, AI in an MIS context and project management.
+
+============================================================
+1. WHY INFORMATION SYSTEMS MATTER
+============================================================
+
+The informed user
+- Business professionals benefit from understanding what is behind the information systems they use.
+- Informed users can contribute to selecting and improving organisational IT applications.
+- Information systems knowledge helps users understand new technologies and how IT can affect
+  organisational performance.
+
+Computer-based information systems (CBIS)
+- Core components include hardware, software, databases, networks, procedures and people.
+- Information systems collect, process, store and distribute information to support decision making,
+  coordination and control.
+- A useful distinction is data -> information -> knowledge.
+- Input captures raw data; processing transforms data; output delivers information; feedback helps
+  evaluate or correct the process.
+- A computer or program is a technical tool; an information system includes technology together with
+  organisational and human components.
+
+Types of organisational systems
+- Functional-area information systems.
+- Enterprise resource planning (ERP) systems.
+- Transaction processing systems (TPS).
+- Interorganisational information systems.
+- E-commerce systems.
+- Office automation systems.
+- Business intelligence systems.
+- Expert systems and dashboards.
+
+Managing information resources
+- The traditional IS function includes systems development/project management, operations, staffing,
+  technical services and infrastructure planning/control.
+- More consultative roles include strategic systems, e-commerce, systems integration, outsourcing,
+  business partnerships and using combined business/technical knowledge to identify new opportunities.
+- Investing in information systems does not guarantee good returns; organisational use and management matter.
+
+IT and organisations/society
+- IT can reshape industries, organisational structures and managerial/non-managerial work.
+- It can create new jobs and business models while also changing or eliminating some roles.
+- Broader effects include employee health/safety, accessibility, healthcare and quality-of-life issues.
+
+============================================================
+2. DATA AND KNOWLEDGE MANAGEMENT IN MIS
+============================================================
+
+Traditional file problems
+- Separate files can create redundancy, inconsistency, inflexibility, weak security and difficulty
+  sharing data across applications.
+- Database approaches are intended to reduce these problems and improve integrity and controlled access.
+
+Big data
+- The teaching material characterises big data using volume, velocity and variety.
+- Sources can include traditional enterprise data, machine/sensor data, social data and images.
+- Challenges include untrusted sources, dirty data and rapidly changing data streams.
+- Organisations may use big data to identify trends, detect fraud, support experiments,
+  micro-segment customers and develop new business models.
+- NoSQL and distributed-data approaches may be used when conventional relational systems are not a good fit.
+
+Data warehouses and data marts
+- Data warehouses integrate data for analysis and decision support.
+- Characteristics include integration, time variation, non-volatility and organisation around business dimensions.
+- A warehouse environment includes source systems, integration processes, data storage, metadata,
+  data quality/governance and users.
+- Online analytical processing (OLAP) supports multidimensional analysis such as slice-and-dice operations.
+
+Data governance and data quality
+- Information policy establishes rules, procedures and roles for sharing, standardising and managing data.
+- Data governance addresses availability, usability, integrity, security and regulatory responsibilities.
+- Data administration and database administration have related but distinct responsibilities.
+- Data-quality work includes identifying faulty data, auditing quality and cleansing data.
+
+Knowledge management
+- Knowledge-management systems support capturing, organising, sharing and using organisational knowledge.
+- Explicit knowledge is easier to articulate and record; tacit knowledge is more personal/experiential
+  and can be harder to capture.
+- Knowledge management should be treated as a cycle/process rather than simply as a software purchase.
+
+============================================================
+3. AI IN AN MIS CONTEXT
+============================================================
+
+- AI systems are introduced in relation to capabilities such as learning from experience, handling
+  ambiguous information and responding to new situations.
+- The material distinguishes broad ideas of strong versus weak AI.
+- AI technologies discussed include expert systems, machine learning, deep learning and neural networks.
+- Application areas include computer vision, natural-language processing, robotics, image recognition
+  and intelligent agents.
+- These categories overlap and evolve; they should not be presented as an exhaustive taxonomy.
+
+============================================================
+4. PROJECT MANAGEMENT FOR INFORMATION SYSTEMS
+============================================================
+
+Triple constraint
+- Time, cost and scope are interrelated constraints in project management.
+- Changing one can affect the others; project management therefore involves trade-offs rather than
+  maximising each independently.
+
+Project-management process
+- Initiation: establish the need, purpose and basic feasibility of a project.
+- Planning: define tasks, resources, timing, dependencies, risks and responsibilities.
+- Execution: perform the planned project work.
+- Monitoring and control: compare actual progress with the plan and take corrective action where needed.
+- Completion: formally close the project, deliver outcomes and capture lessons/results.
+- Gantt charts are used to visualise project tasks and timing.
+
+Project failure and success
+- IS projects can fail because of unclear scope, unrealistic schedules/budgets, weak coordination,
+  inadequate risk management, poor communication and other management problems.
+- Success requires attention to both technical delivery and organisational/project-management processes.
+
+PMBOK context
+- The supplied slides introduce the Project Management Body of Knowledge and its knowledge areas as a
+  framework for coordinating project-management responsibilities.
+
+============================================================
+5. RESPONSE BEHAVIOUR
+============================================================
+
+- Use this file for MIS-related questions and to describe material Benjamin Yeo teaches.
+- Do not claim that every MIS concept listed here is assessed in every term.
+- Distinguish information systems from information technology: an information system includes people,
+  processes and organisational context as well as technology.
+- General MIS knowledge may supplement explanations but should not be presented as documented course
+  content unless supported here.

@@ -1,0 +1,164 @@
+DCLXVI — GENERAL METAL MUSIC KNOWLEDGE
+
+Purpose
+-------
+This file gives DCLXVI enough explicit metal vocabulary and history to discuss metal naturally.
+It is GENERAL KNOWLEDGE. Nothing here proves that Benjamin Yeo personally likes a band, album,
+genre or technique. Personal preferences must come from music.txt or later user-supplied material.
+
+Heavy metal: broad outline
+--------------------------
+Heavy metal developed from late-1960s and early-1970s heavy rock. Black Sabbath is central to the
+genre's early codification; Judas Priest helped sharpen the style and image; Motörhead connected
+heavy metal and punk energy; and the New Wave of British Heavy Metal (NWOBHM), including Iron
+Maiden and Saxon, helped shape the faster and more melodic forms that followed.
+
+Genre labels are useful but imperfect. Bands often cross boundaries, scenes evolve, and fans may
+disagree about classification. DCLXVI should explain distinctions without pretending the taxonomy
+is a natural law. Metal has enough arguments already.
+
+Major styles
+------------
+Traditional / classic heavy metal:
+- Riff-driven heavy music rooted in the 1970s and early 1980s.
+- Often features melodic guitar leads, prominent vocals and conventional song structures.
+- Examples commonly associated with the style include Black Sabbath, Judas Priest and Iron Maiden.
+
+Thrash metal:
+- Faster, more aggressive development influenced by NWOBHM and hardcore punk.
+- Common features include rapid alternate picking, palm-muted riffs and energetic drumming.
+- Metallica, Slayer, Megadeth and Anthrax are the best-known U.S. "Big Four", though thrash scenes
+  extend far beyond them.
+
+Death metal:
+- Typically uses heavily distorted guitars, death-growled vocals, aggressive drumming and complex
+  or extreme riffing.
+- Important early/defining bands include Death, Morbid Angel and Obituary; Cannibal Corpse is a
+  major later/continuing example.
+- Technical, melodic, brutal and progressive death metal are among its many branches.
+
+Black metal:
+- Common traits include tremolo-picked guitar, blast-beat drumming, harsh vocals and often a raw or
+  atmospheric production aesthetic.
+- The Norwegian early-1990s scene is historically influential, but black metal is geographically
+  and stylistically much broader.
+- Examples commonly discussed in genre history include Mayhem, Darkthrone and Emperor.
+- Avoid reducing the entire genre to controversies associated with a subset of artists.
+
+Doom metal:
+- Emphasises slower tempos, weight, atmosphere and sustained riffs.
+- Draws heavily from the darker and slower side of Black Sabbath.
+- Traditional doom, funeral doom, death-doom, sludge and stoner-doom overlap in different ways.
+
+Power metal:
+- Often melodic, fast and harmonically bright, with clean vocals, prominent leads and sometimes
+  fantasy-oriented themes.
+- Helloween and Blind Guardian are important examples in the European tradition.
+
+Progressive metal:
+- Uses structural complexity, changing metres, extended forms and/or technically demanding
+  musicianship.
+- Dream Theater is a major example; other progressive-metal approaches can sound very different.
+
+Groove metal:
+- Focuses on rhythmic weight and syncopated mid-tempo riffing rather than constant speed.
+- Pantera and Machine Head are commonly associated with the style.
+
+Industrial metal:
+- Combines metal with industrial/electronic textures, programmed elements or machine-like rhythms.
+- The balance between metal and industrial influences varies considerably between artists.
+
+Metalcore:
+- Combines metal riffing with hardcore-punk elements.
+- Breakdowns are common, although metalcore includes several distinct generations and styles.
+
+Deathcore:
+- Combines death-metal vocabulary with metalcore/hardcore breakdown structures and extreme vocals.
+
+Melodic death metal:
+- Death-metal intensity combined with stronger melodic guitar writing, especially associated with
+  the Gothenburg scene.
+- At the Gates, In Flames and Dark Tranquillity are major reference points.
+
+Grindcore:
+- An extreme style drawing from hardcore punk and metal, often characterised by very short songs,
+  high speed and blast beats.
+- Napalm Death is foundational.
+
+Symphonic / folk and other hybrids:
+- Symphonic metal incorporates orchestral/symphonic textures.
+- Folk metal incorporates folk instrumentation, melodic traditions or themes.
+- Many bands mix these with black, death, power or other metal styles.
+
+Drumming vocabulary
+-------------------
+Blast beat:
+A family of very fast patterns alternating or combining snare, kick and cymbal/hi-hat attacks.
+There is more than one blast-beat technique.
+
+Double-bass / double-kick:
+Use of two bass-drum beaters, usually through two pedals or a double pedal, for sustained fast
+patterns or rhythmic figures.
+
+Skank beat / d-beat:
+Fast punk-derived patterns that appear in thrash, death, black and related styles.
+
+Breakdown:
+A rhythmically emphasised, often slower or more spacious section designed around impact and groove.
+Especially common in hardcore-derived metal styles.
+
+Ghost note:
+A quieter drum stroke used for articulation and groove.
+
+Linear drumming:
+A pattern in which limbs generally avoid striking at the same instant, creating interlocking lines.
+
+Odd metre / changing metre:
+Time signatures other than regular 4/4 or frequent shifts between metres. Common in progressive
+metal but not exclusive to it.
+
+Trigger:
+An electronic sensor used with an acoustic drum, especially kick drums, to produce or reinforce a
+consistent sampled signal. Using triggers is a production/performance choice, not evidence that a
+drummer is "cheating".
+
+Guitar / arrangement vocabulary
+--------------------------------
+Riff:
+A recurring guitar/bass figure forming a structural or rhythmic identity.
+
+Palm muting:
+Muting strings near the bridge with the picking hand to create a tighter, percussive sound.
+
+Tremolo picking:
+Rapid repeated picking of a note or chord; especially associated with black metal but widely used.
+
+Down-tuning:
+Tuning below standard pitch to alter range, tension and tonal weight.
+
+Breakdown, bridge, solo, intro, outro:
+Structural labels whose exact functions vary by style.
+
+Production vocabulary
+---------------------
+Raw production:
+A deliberately or historically less-polished sound. Commonly associated with some black metal and
+underground traditions, but "raw" is not synonymous with "bad".
+
+Scooped mids:
+An EQ approach reducing midrange, historically associated with some metal guitar tones.
+
+Layering / double-tracking:
+Recording multiple performances to thicken guitars, vocals or other parts.
+
+Compression:
+Controls dynamic range. Extreme-metal production may use substantial compression, but the amount
+and purpose vary.
+
+General behaviour
+-----------------
+- Explain genres descriptively, not as rigid hierarchies.
+- Do not declare a single band the "best".
+- Do not infer Benjamin Yeo's preferences from examples in this file.
+- If asked about a specific band's current line-up, tour, release or other time-sensitive fact,
+  current web verification would be preferable to relying on static knowledge.

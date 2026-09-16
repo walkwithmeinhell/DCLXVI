@@ -1,0 +1,97 @@
+DCLXVI — TEACHING
+
+Current / recent Seattle University teaching
+--------------------------------------------
+Graduate:
+- Data Management for Business
+- Cybersecurity and Artificial Intelligence
+- Machine Learning for Business
+- Business Analytics and Data Modelling
+- Introduction to Business Analytics
+- MS in Business Analytics Programming Prep Course
+
+Undergraduate:
+- Data Mining and Big Data Analytics
+- Introduction to Information Systems and Analytics
+
+Previous teaching
+-----------------
+DePaul University, undergraduate:
+- Applied Information Management Systems
+- Foundations of Decision Analytics
+- There's a Story Everywhere: An Analysis of Texts/Media
+- Foundations of Adult Learning
+- Summit Seminar
+
+North Central College:
+Graduate:
+- Quality Management
+Undergraduate:
+- Business Information Systems
+
+Chapman University, undergraduate:
+- Introduction to Information Systems
+- Mathematical Analysis for Business
+- Introduction to Business Analytics
+- Intermediate Macroeconomic Theory
+- Principles of Macroeconomics
+
+Loyola Marymount University:
+Graduate:
+- Enterprise Management
+Undergraduate:
+- Management Information Systems
+
+University of Redlands, undergraduate:
+- Economics for Business
+
+Fashion Institute of Design and Merchandising, undergraduate:
+- Business Information Technology
+
+Course-knowledge relationship
+-----------------------------
+The separate course_notes.txt file is the primary grounding source for BUAN 4310 machine-learning
+and data-mining concepts. It includes material on data preparation, model evaluation, kNN,
+cross-validation, regression, classification and regression trees, imbalanced data, clustering,
+PCA, neural networks, Naive Bayes, logistic regression, discriminant analysis, recommender
+systems, market-basket analysis, text analytics and related R/Python demonstrations.
+
+The public Spell Book also contains material across other teaching areas, including R, Python,
+SQL/database work, statistics, visualisation, analytics, cybersecurity/AI and information systems.
+The Spell Book is a teaching resource and demonstration catalogue, not by itself a complete
+statement of every syllabus, requirement or assessment.
+
+yeoda
+-----
+"yeoda" (lower-case spelling) is a teaching persona used in analytics and machine-learning teaching.
+It deliberately draws on Star Wars references and humour. DCLXVI should understand who/what yeoda
+is and recognise Star Wars-themed course references, but DCLXVI should retain its own voice and
+must not start speaking in Yoda-like syntax.
+
+How to answer teaching questions
+--------------------------------
+- "What do you teach?" -> answer from this file.
+- "What is cross-validation?" -> use course_notes.txt first.
+- "How do you teach cross-validation?" -> combine documented teaching context with course_notes.txt,
+  but do not invent classroom practices that are not documented.
+- "Is topic X required/assessed?" -> only answer if a supplied course source explicitly says so.
+- General technical knowledge may supplement an explanation, but it must not be presented as a
+  documented feature of Benjamin Yeo's course unless the course materials support it.
+
+Additional teaching knowledge supplied for DCLXVI
+-------------------------------------------------
+Benjamin Yeo has explicitly confirmed that he teaches Excel. Supplied teaching materials also provide
+course grounding for:
+- Excel and spreadsheet-based business analytics, including formulas/functions, visualisation,
+  descriptive statistics, statistical inference, regression and linear optimisation/Solver.
+- Management information systems, including information-systems foundations, data/knowledge
+  management, AI and IS project management.
+- Database design and SQL, including relational concepts, ER modelling, normalisation, querying,
+  joins, aggregation, table creation and data manipulation.
+- Cybersecurity and artificial intelligence, including LLM foundations, the Turing Test, AI-driven
+  phishing, data poisoning, AI-based malware detection, ethics, privacy, accountability and selected
+  AI-law/transparency examples.
+
+Use the separate excel_business_analytics.txt, mis.txt, databases_sql.txt and cybersecurity_ai.txt
+files for detailed explanations. Their presence documents teaching material, but does not by itself
+establish what is required, assessed or covered in every term.

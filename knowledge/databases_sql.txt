@@ -1,0 +1,211 @@
+DCLXVI — DATABASES, DATA MODELLING AND SQL
+
+Purpose
+-------
+This file grounds DCLXVI in database and SQL material Benjamin Yeo teaches, including relational
+concepts, entity-relationship modelling, normalisation and SQL querying/manipulation.
+
+============================================================
+1. DATABASE FOUNDATIONS
+============================================================
+
+Data and information
+- Data are raw facts; information is data processed or organised to provide meaning in context.
+- Databases provide structured, shared storage designed to support reliable access and management.
+
+Database management systems (DBMS)
+- A DBMS manages database structures and access rather than leaving each application to maintain
+  its own isolated files.
+- Database systems aim to improve sharing, security, integrity, consistency and data independence.
+- Traditional file-processing environments can suffer from redundancy, inconsistency, structural/data
+  dependence and update/insertion/deletion anomalies.
+- Good database design matters because poor structure produces integrity and maintenance problems later.
+
+============================================================
+2. THE RELATIONAL MODEL
+============================================================
+
+Tables
+- A relational table represents data in rows and columns.
+- Each row/tuple represents an instance/record; each column/attribute represents a property.
+- Well-designed tables have clear keys and controlled relationships.
+
+Keys
+- Keys identify records and connect tables.
+- A primary key uniquely identifies each row in a table.
+- Candidate keys are attributes/combinations capable of uniquely identifying a row; one is chosen as primary.
+- A foreign key references a key in another table and supports relationships between tables.
+- Surrogate keys are artificial identifiers introduced when appropriate for design/implementation reasons.
+
+Dependencies and integrity
+- Functional dependencies describe how one attribute or set of attributes determines another.
+- Entity integrity requires valid/unique primary-key identification.
+- Referential integrity requires foreign-key values to correspond appropriately to referenced rows or
+  to follow permitted null rules.
+- Constraints and integrity rules protect consistency rather than relying entirely on user behaviour.
+
+Metadata, catalogues and indexes
+- A data dictionary/system catalogue stores metadata describing database objects.
+- Indexes can improve retrieval performance but also require storage and maintenance; they are a design trade-off.
+
+============================================================
+3. ENTITY-RELATIONSHIP MODELLING
+============================================================
+
+Entities and attributes
+- An entity is a distinguishable object or concept about which data are stored.
+- Attributes describe entities.
+- Attributes may have different properties such as being simple/composite, single-/multi-valued or derived,
+  depending on the modelling notation and business requirements.
+
+Relationships
+- Relationships describe associations between entities.
+- Connectivity describes patterns such as one-to-one, one-to-many and many-to-many.
+- Cardinality expresses numerical relationship constraints.
+- Existence dependence and relationship participation express whether an entity occurrence can/must
+  exist in relation to another.
+- Many-to-many relationships are commonly resolved using an associative/composite entity.
+
+Developing an ERD
+- Identify relevant entities from the business problem.
+- Identify attributes and candidate identifiers.
+- Determine relationships, connectivity, cardinality and participation.
+- Resolve many-to-many relationships where needed.
+- Review the model against business rules and expected data operations.
+- ER diagrams should communicate business/data structure, not merely look tidy.
+
+Tools
+- The supplied materials demonstrate constructing ER diagrams in Microsoft Visio and Lucidchart.
+- Tool mechanics are secondary to correctly modelling entities, keys and relationships.
+
+============================================================
+4. NORMALISATION
+============================================================
+
+Purpose
+- Normalisation reduces avoidable redundancy and update anomalies by organising attributes into
+  well-structured relations.
+- Normalisation is a design method, not a goal to split tables indefinitely.
+
+First normal form (1NF)
+- Remove repeating groups/multivalued fields from a single row structure and ensure values are atomic
+  for the chosen model.
+- Identify a suitable key for each resulting relation.
+
+Second normal form (2NF)
+- Start with 1NF.
+- Remove partial dependencies in which a non-key attribute depends on only part of a composite key.
+
+Third normal form (3NF)
+- Start with 2NF.
+- Remove transitive dependencies in which a non-key attribute depends on another non-key attribute
+  rather than directly on the key.
+
+Design considerations
+- Surrogate keys may simplify identification/relationships in some implementations.
+- Denormalisation deliberately introduces redundancy in selected circumstances, usually for
+  performance or practical reasons; it should be a conscious trade-off after understanding the normalised design.
+
+============================================================
+5. SQL QUERYING
+============================================================
+
+SQL roles
+- SQL can serve as a data manipulation language (DML), data definition language (DDL), transaction
+  control language (TCL) and data control language (DCL).
+- SQL is declarative/nonprocedural: a query specifies the desired result rather than a detailed
+  step-by-step algorithm for obtaining it.
+
+Core SELECT structure
+A complete query can contain:
+SELECT [DISTINCT] ...
+FROM ...
+JOIN ... ON/USING ...
+WHERE ...
+GROUP BY ...
+HAVING ...
+ORDER BY ... ASC/DESC
+
+Clause roles
+- SELECT chooses the columns/expressions returned.
+- FROM identifies source table(s).
+- WHERE filters individual rows before grouping.
+- GROUP BY forms groups sharing values.
+- HAVING filters groups after aggregation.
+- ORDER BY sorts the final result.
+
+Filtering and operators
+- Comparison operators include =, <, <=, >, >= and not-equal forms.
+- Logical operators include AND, OR and NOT.
+- Special operators covered include BETWEEN, IN, LIKE and IS NULL.
+- Character and date comparisons require attention to data type and DBMS-specific behaviour.
+
+Ordering
+- ORDER BY can sort on one or more fields and can specify ascending or descending order.
+- Multiple sort keys create a cascading order.
+
+============================================================
+6. JOINS AND AGGREGATION
+============================================================
+
+Joins
+- Joins combine related rows from multiple tables.
+- Inner joins return matching rows.
+- Outer joins retain matches plus unmatched rows from one/both sides depending on left, right or full join.
+- NATURAL JOIN relies on same-named compatible columns and should therefore be used with care.
+- JOIN ... USING specifies a shared join column.
+- JOIN ... ON specifies an explicit join condition.
+- CROSS JOIN returns a Cartesian/relational product.
+- Table aliases improve clarity and maintainability, especially in multi-table queries.
+
+Aggregate functions
+- COUNT counts relevant rows/non-null values according to the expression used.
+- MIN and MAX return extrema.
+- SUM totals numerical values.
+- AVG returns an arithmetic mean.
+- GROUP BY combines aggregation with categories/groups.
+- HAVING applies conditions to grouped/aggregated results.
+
+Crafting queries
+- Understand the data model before writing the query.
+- Translate the business question into the data required, filters, relationships and aggregation.
+- Real databases are messy and long-lived; correct queries depend on knowing what the data actually represent.
+
+============================================================
+7. CREATING AND CHANGING DATA WITH SQL
+============================================================
+
+Schemas and data types
+- A schema is a logical collection of related database objects.
+- Common data-type families include numeric, integer, character/varchar and date types.
+- Type and size choices should fit the domain of the data rather than being chosen arbitrarily.
+
+CREATE TABLE and constraints
+- CREATE TABLE defines table structure, columns, data types and constraints.
+- PRIMARY KEY identifies rows.
+- FOREIGN KEY enforces relationships/referential rules.
+- NOT NULL prevents missing values in a required column.
+- UNIQUE prevents duplicate values where uniqueness is required.
+- DEFAULT supplies a value when none is explicitly provided.
+- CHECK validates values against a condition.
+- Tables may also be created from query results in SQL dialects that support the relevant syntax.
+
+Indexes
+- CREATE INDEX can improve search performance.
+- Index design should reflect query needs; indexes are not free because they use storage and add maintenance overhead.
+
+Data manipulation
+- INSERT adds rows.
+- INSERT ... SELECT can insert rows derived from a query.
+- UPDATE changes values in existing rows; a WHERE clause is critical when only selected rows should change.
+- DELETE removes rows; omitting WHERE can affect all rows.
+- ROLLBACK can undo uncommitted changes in transaction contexts that support it.
+
+============================================================
+8. RESPONSE BEHAVIOUR
+============================================================
+
+- Use this file for database-design, ERD, normalisation and SQL questions.
+- When giving SQL examples, explain the purpose of each clause instead of presenting unexplained code.
+- SQL dialects differ; if syntax is DBMS-specific, say so.
+- Do not claim a particular assignment or assessment uses a concept unless that information is supplied separately.

@@ -1,0 +1,764 @@
+BUAN 4310 COURSE KNOWLEDGE
+Consolidated reference for yeoda v5
+Updated September 2026 from the current BUAN 4310 Spell Book
+
+Purpose
+These notes consolidate material from the instructor's uploaded BUAN 4310 lecture slides and the current accessible BUAN 4310 HTML demonstrations from the Spell Book. They are intended to ground course-related answers. The current Spell Book includes both R demonstrations and Python/Parseltongue counterparts for several machine-learning methods. If a topic is not covered here, the chatbot may still answer from general machine-learning knowledge, but it should not claim anything about whether that topic is required, optional, assessed, or part of a particular syllabus.
+
+============================================================
+1. DATA MINING AND MACHINE LEARNING OVERVIEW
+============================================================
+
+Statistics versus data mining
+- Traditional statistical work often focuses on explaining or describing population relationships, fitting interpretable models, confidence intervals, hypothesis tests, and p-values.
+- Data mining often focuses on prediction for new records, larger datasets, many variables, predictive performance, and decision costs.
+- These are not mutually exclusive; the emphasis differs.
+
+Core data-mining ideas
+- Classification
+- Prediction
+- Association rules and recommender systems
+- Data and dimension reduction
+- Data exploration
+- Visualisation
+
+Common process frameworks
+SEMMA:
+- Sample
+- Explore
+- Modify
+- Model
+- Assess
+
+CRISP-DM:
+- Business understanding
+- Data understanding
+- Data preparation
+- Modelling
+- Evaluation
+- Deployment
+
+Supervised learning
+- The goal is to predict one target or outcome variable.
+- Training data contain known target values.
+- The fitted model is then used to score records whose target value is not known.
+- Classification predicts a categorical outcome.
+- Prediction predicts a numerical outcome.
+
+Unsupervised learning
+- There is no target variable.
+- The goal is to find patterns or meaningful groupings.
+- Examples include clustering, association rules, data reduction and exploratory visualisation.
+
+Classification
+- Predicts a categorical target.
+- Examples include purchase/no purchase, fraud/no fraud, and creditworthy/not creditworthy.
+- The target is often binary, but classification can be multiclass.
+
+Prediction
+- Predicts a numerical target such as sales, revenue, cost or performance.
+- Classification and numerical prediction are both forms of predictive analytics.
+
+Association rules
+- Look for "what goes with what".
+- Commonly use transaction-style data.
+- Can support recommender systems.
+- Also called affinity analysis.
+
+Data reduction
+- Reduces complexity.
+- May reduce the number of variables, for example with principal components.
+- May reduce or summarise records, for example by clustering.
+
+Data exploration
+- Real datasets are often large, complex and messy.
+- Exploration helps understand the data and refine the analytical task.
+- Histograms, boxplots, bar charts and scatterplots are common tools.
+
+============================================================
+2. DATA PREPARATION
+============================================================
+
+Variable types
+- Main distinction: numerical versus categorical.
+- Numerical variables may be continuous or integer.
+- Categorical variables may be ordered or unordered.
+
+Categorical variables
+- Some algorithms require categorical variables to be converted to binary dummy variables.
+- In regression with R's lm(), factors are dummy-coded internally.
+- A full set of dummies should not be included with an intercept in ordinary regression because of perfect multicollinearity.
+- Some methods, such as Naive Bayes, can use categorical variables more directly.
+
+Outliers
+- An outlier is an observation far from the rest of the data.
+- Outliers can have disproportionate influence on models.
+- Domain knowledge is needed to decide whether an outlier is an error or a legitimate extreme case.
+- In some applications, finding unusual cases is itself the goal; this is anomaly detection.
+
+Missing data
+- Many algorithms cannot directly process missing values.
+- One option is omission if only a small number of records are affected.
+- Another is imputation, replacing missing values with reasonable substitutes.
+- Median imputation is one simple example.
+
+Normalisation / standardisation
+- Needed when variables on larger numerical scales would dominate distance or optimisation calculations.
+- A common z-score standardisation subtracts the mean and divides by the standard deviation.
+- Another approach rescales values to 0-1.
+- Distance-based methods such as kNN and clustering are particularly sensitive to scale.
+
+Basic data manipulation and reshaping
+- Preliminary work commonly includes selecting variables, filtering records, sorting, creating or recoding variables, grouping records and calculating summaries.
+- Grouped summaries can be used to compare counts or numerical measures across categories.
+- Data may need to be reshaped before analysis or visualisation.
+- The Spell Book demonstrates conversion from wide to long form, where repeated measurement columns are represented by a variable column and a value column.
+- Identifier variables should be retained when reshaping so that observations can still be traced correctly.
+
+Preliminary data exploration
+- Inspect variable names, dimensions, data types, summary statistics and category frequencies before modelling.
+- Explore unusual values, missingness, distributions and relationships between variables.
+- Descriptive exploration can reveal data-quality problems and can also suggest useful modelling choices.
+- Visualisation is part of exploration rather than merely presentation after a model is fitted.
+
+============================================================
+3. OVERFITTING AND DATA PARTITIONING
+============================================================
+
+Overfitting
+- A highly complex model can fit training data very well but perform poorly on new data.
+- Causes include too many predictors, too many parameters, or trying many alternative models.
+- The key concern is predictive performance on unseen data, not merely training fit.
+
+Training partition
+- Used to fit or develop the model.
+
+Validation partition
+- Used to evaluate the fitted model on data not used to fit it.
+- Helps detect overfitting and compare candidate models.
+
+Test partition
+- Can be used after repeated model selection on training and validation data.
+- Provides a final estimate of performance on unseen data.
+- Repeatedly using validation data to choose models or tuning parameters can itself lead to overfitting the validation data.
+
+============================================================
+4. CLASSIFICATION DIAGNOSTICS
+============================================================
+
+Confusion matrix outcomes
+For a binary classifier:
+- True Positive (TP): predicted positive, actually positive.
+- True Negative (TN): predicted negative, actually negative.
+- False Positive (FP): predicted positive, actually negative.
+- False Negative (FN): predicted negative, actually positive.
+
+Sensitivity / recall / true positive rate
+Sensitivity = TP / (TP + FN)
+- Measures the proportion of actual positive cases correctly identified.
+
+Specificity
+Specificity = TN / (TN + FP)
+- Measures the proportion of actual negative cases correctly identified.
+
+False positive rate
+FPR = 1 - Specificity
+
+Accuracy and error rate
+Accuracy = correctly classified records / all records.
+Error rate = misclassified records / all records.
+For multiclass classification, the overall error rate is the sum of all misclassified records divided by the total number of records.
+
+Lecture example with 3,000 records
+- TN = 2,689
+- FN = 85
+- FP = 25
+- TP = 201
+- Error rate = (25 + 85) / 3000 = 3.67%
+- Accuracy = 96.33%
+- Sensitivity = 201 / (201 + 85) = 70.28%
+- Specificity = 2689 / (2689 + 25) = 99.08%
+
+Probability cutoffs
+- A binary classifier often converts predicted probabilities to class labels using a cutoff.
+- Changing the cutoff changes TP, TN, FP and FN and therefore changes sensitivity and specificity.
+- Lowering the cutoff usually predicts more positives: sensitivity tends to increase while false positives may increase.
+- Raising the cutoff usually predicts fewer positives: specificity may increase while sensitivity may decrease.
+
+ROC curve
+- ROC stands for Receiver Operating Characteristic.
+- The ROC curve plots true positive rate against false positive rate across different probability cutoffs.
+- A diagonal line represents random classification.
+- Better models generally bow farther towards the upper-left corner.
+
+AUC
+- AUC is the area under the ROC curve.
+- It summarises how well a model separates the two classes across cutoffs.
+- Higher AUC indicates better discrimination.
+
+Cutoff examples
+Cutoff 0.50:
+- TP = 4, FP = 2, FN = 0, TN = 2
+- TPR = 1.00
+- FPR = 0.50
+
+Cutoff 0.75:
+- TP = 3, FP = 1, FN = 1, TN = 3
+- TPR = 0.75
+- FPR = 0.25
+
+Cutoff 0.25:
+- TP = 4, FP = 3, FN = 0, TN = 1
+- TPR = 1.00
+- FPR = 0.75
+
+Cumulative gains
+- Measures how effectively a model concentrates target cases among records with the highest predicted probabilities.
+- Example: selecting the top 30% of cases by predicted probability captured 38% of all target cases.
+
+Cumulative lift
+- Compares model-guided selection against selection without a model.
+- Lift of 1 means no improvement.
+- Example: the top 20% selected by the model produced 1.3 times the target yield of selection without a model.
+
+Response
+- Measures the percentage of selected cases that belong to the target class within a ranked group.
+
+Cumulative response
+- Measures the target-class response rate when the highest-ranked groups are accumulated.
+
+============================================================
+5. k-NEAREST NEIGHBOURS (kNN)
+============================================================
+
+Core idea
+- kNN predicts a new record using nearby labelled records.
+- For classification, the neighbours vote on the class.
+- For numerical prediction, neighbour outcomes can be averaged.
+- kNN is a lazy learner: it does not estimate a conventional parametric model before prediction.
+
+Distance
+- kNN depends on a distance measure between records.
+- Because distance is scale-sensitive, numerical predictors should usually be normalised before fitting and prediction.
+- The same transformation learned from training data should be applied to validation and new records.
+
+Choice of k
+- k is the number of neighbours consulted.
+- Small k creates very local decision boundaries and can be sensitive to individual training records.
+- Larger k smooths the decision boundary.
+- k can be tuned by comparing predictive metrics across candidate values.
+
+Training and validation
+- Model quality should be checked on validation data, not only the training data.
+- Confusion matrices can be used to inspect multiclass or binary kNN performance.
+- For binary formulations, metrics can include accuracy, sensitivity, specificity, precision, F1 and AUC.
+
+Probabilities
+- kNN class probabilities reflect the composition of the selected neighbours.
+- With k = 1, a predicted class probability of 100% simply means the single nearest neighbour belongs to that class; it does not imply statistical certainty.
+
+Cutoffs
+- When class probabilities are available for a binary target, different probability cutoffs can be evaluated in the same way as other classifiers.
+
+kNN regression
+- kNN can also predict a numerical outcome.
+- Instead of neighbours voting for a class, the numerical outcomes of nearby training records are combined to form the prediction.
+- The same issues of scaling, choice of k, training/validation separation and distance apply.
+- Numerical prediction should be evaluated with prediction-error measures such as RMSE or MAE rather than a confusion matrix.
+
+R and Python implementations
+- The current Spell Book contains R kNN demonstrations and a Python/Parseltongue counterpart.
+- In the Python demonstration, training and validation data are separated before modelling and StandardScaler is fitted from the training predictors before transformation.
+- The Python workflow uses scikit-learn tools for preprocessing, partitioning and kNN classification.
+
+============================================================
+6. CROSS-VALIDATION
+============================================================
+
+Purpose
+- Cross-validation estimates predictive performance more robustly than relying on a single split.
+- Data are repeatedly partitioned into training and holdout folds.
+- Each fold is used for validation while the remaining folds are used for training.
+- Performance is averaged across folds.
+- Cross-validation is also useful for tuning model parameters.
+
+Important distinction
+- Cross-validation helps with model selection and tuning, but a final independent test set may still be useful when extensive tuning has been performed.
+
+============================================================
+7. LINEAR REGRESSION
+============================================================
+
+Basic form
+- Linear regression assumes a linear relationship between predictors and a numerical outcome.
+- The model contains a constant/intercept, predictor coefficients and an error term.
+
+Explanatory modelling
+- Goal: understand relationships between predictors and outcome.
+- Common measures include R-squared, residual analysis, p-values and checks of model assumptions.
+
+Predictive modelling
+- Goal: predict target values for new observations.
+- Fit the model on training data.
+- Assess predictive performance on validation data.
+- The explanatory role of individual predictors is secondary to predictive accuracy.
+
+Categorical predictors
+- R's lm() automatically creates dummy variables for factor predictors.
+- With an intercept, one category serves as the reference category.
+
+Prediction workflow
+- Choose predictors.
+- Explore data.
+- Partition into training and validation sets.
+- Fit the regression model to training data.
+- Predict validation outcomes.
+- Assess validation errors.
+- Refit the chosen model as appropriate and score new data.
+
+Error metrics
+Error = actual - predicted.
+- ME: mean error.
+- RMSE: root mean squared error.
+- MAE: mean absolute error.
+- MPE: mean percentage error.
+- MAPE: mean absolute percentage error.
+
+Predictor subset selection
+- Goal: a parsimonious model that is sufficiently accurate and robust.
+- Exhaustive / best subset search evaluates many subsets and can be computationally expensive.
+- Forward selection starts with no predictors and adds predictors.
+- Backward elimination starts with all predictors and removes predictors.
+- Stepwise selection can add and remove predictors during the search.
+
+Transformations
+- The current Spell Book includes linear-regression demonstrations with transformed variables, including a machine-learning-oriented version.
+- Transformations may be explored when relationships are not adequately represented on the original scale.
+- A transformed model should still be evaluated on validation data rather than assumed to be better merely because it is more elaborate.
+
+Model diagnostics
+- Regression diagnostics use residuals and related plots or statistics to investigate whether a fitted model behaves as expected.
+- Diagnostics may help identify non-linearity, unusual observations, unequal residual variation or other model problems.
+- For explanatory modelling, assumption checks are central to interpretation and inference.
+- For predictive modelling, validation performance remains essential even when diagnostic checks are also performed.
+
+============================================================
+8. CLASSIFICATION AND REGRESSION TREES
+============================================================
+
+Core idea
+- Trees classify or predict an outcome using a sequence of rules.
+- Also called CART, decision trees, or simply trees.
+- Tree diagrams represent the rules graphically.
+
+Recursive partitioning
+- Repeatedly split records into two groups.
+- Candidate splits are evaluated to increase outcome homogeneity within the resulting groups.
+- For classification, purity means that a node contains mostly one class.
+- For regression, purity means numerical outcomes within a node are similar.
+
+Tree terminology
+- Decision node: a point where the tree splits.
+- Terminal node / leaf: an endpoint that produces a prediction.
+
+Classification trees
+- Terminal-node class predictions are typically based on the dominant or majority class.
+- Impurity measures include Gini and entropy.
+- Gini is 0 when a node is completely pure.
+- Entropy is also lowest for pure nodes.
+
+Reading rules
+- A path from the root to a leaf can be translated into an IF-THEN rule.
+
+Overfitting in trees
+- Very large trees can fit noise in the training data.
+- Training error may continue falling while validation error eventually rises.
+- This is a classic demonstration of overfitting.
+
+Pruning
+- A tree can first be grown large and then pruned.
+- The aim is to find a simpler tree with better validation performance.
+- In rpart, the complexity parameter cp affects how readily the tree grows.
+- Smaller cp values permit greater complexity; larger cp values produce simpler trees.
+
+Regression trees
+- Used when the outcome is continuous.
+- A leaf prediction is typically the average target value among training records in that leaf.
+- Impurity can be measured using squared deviations from the leaf mean.
+- Predictive performance can be measured by RMSE.
+
+Current Springfield regression-tree demonstration
+- Uses fictional Homer Simpson disaster-cost data with numerical and categorical predictors.
+- Demonstrates a deliberately large tree, a shallower tree, pruning with the complexity parameter, predictions for new records, improved trees and cross-validation.
+- The lesson contrasts training performance with validation performance to illustrate overfitting and pruning.
+
+Advantages of trees
+- Easy to understand and interpret.
+- Produce explicit decision rules.
+- Automatically perform some variable selection.
+- Do not rely on the same assumptions as traditional statistical models.
+
+Disadvantages of single trees
+- Can be unstable.
+- Predictive performance can be weaker than ensemble methods.
+
+Random forests
+- Build many trees from bootstrap samples.
+- Each tree uses a random subset of predictors.
+- Classification predictions are combined by voting.
+- Numerical predictions are combined by averaging.
+- Often improve predictive performance but reduce interpretability.
+
+Boosting
+- Builds trees iteratively.
+- Later trees focus more on observations misclassified by earlier trees.
+- Predictions are combined using weighted voting or averaging.
+
+============================================================
+9. UNBALANCED CLASS DATA
+============================================================
+
+Definition
+- Class imbalance occurs when one class represents an overwhelming proportion of a classification dataset.
+- This can cause misleading performance if a model mainly predicts the majority class.
+
+Important caveat
+- Imbalance is not automatically a defect.
+- Domain knowledge matters.
+- Fraud is naturally rare, so a transaction dataset may legitimately contain very few fraudulent cases.
+
+Possible remedies
+- Rebalancing should generally be performed on the training data rather than contaminating validation data.
+- One approach shown in the course uses the ROSE package to generate a more balanced training dataset.
+- The model is then trained on the rebalanced training data and evaluated on the untouched validation data.
+
+Evaluation
+- Accuracy alone can be misleading with severe imbalance.
+- Sensitivity, specificity, precision, F1, ROC/AUC and the practical costs of errors should be considered.
+
+============================================================
+10. CLUSTER ANALYSIS
+============================================================
+
+Main idea
+- Clustering forms groups of similar records.
+- It is unsupervised because there is no target class to predict.
+- Applications include customer segmentation, grouping firms, portfolio analysis and scientific classification.
+
+Distance between records
+- Euclidean distance is a common measure.
+- Distance calculations are strongly influenced by scale.
+- Standardisation is therefore usually important.
+
+Hierarchical clustering
+Agglomerative:
+- Begin with each record as its own cluster.
+- Repeatedly merge the closest clusters until one cluster remains.
+
+Divisive:
+- Begin with one cluster containing all records.
+- Repeatedly divide it.
+
+Dendrogram
+- Shows the sequence and distance of hierarchical merges.
+- Clusters joined lower on the dendrogram are merged earlier.
+- A horizontal cut at a chosen distance determines a possible number of clusters.
+
+Linkage methods
+- Single linkage: distance between the closest pair of records across two clusters.
+- Complete linkage: distance between the farthest pair.
+- Average linkage: average of all pairwise cross-cluster distances.
+- Centroid linkage: distance between cluster centroids.
+- Ward's method: considers information loss and often produces clusters of roughly similar size.
+
+Non-hierarchical clustering / k-means
+- The current Spell Book also includes non-hierarchical clustering.
+- k-means requires the analyst to choose the number of clusters k.
+- Records are represented in a numerical feature space and assigned to clusters around centroids.
+- Because the solution can depend on starting values, multiple starts can be used rather than relying on a single initialisation.
+- The elbow method can compare within-cluster sums of squares across candidate values of k.
+- The silhouette method provides another way to compare candidate values of k and assess separation.
+- Choosing k is not purely mechanical; interpretability and usefulness of the resulting groups also matter.
+
+Cluster validation and interpretation
+- Clusters should be meaningful and useful.
+- Apparent clusters can occur by chance.
+- Different clustering methods can produce different solutions.
+- Review descriptive statistics and variables not used for clustering.
+- Useful properties include stability and separation.
+
+============================================================
+11. PRINCIPAL COMPONENT ANALYSIS (PCA)
+============================================================
+
+Purpose
+- PCA reduces a set of numerical variables to a smaller set of principal components.
+- Components are combinations of the original variables.
+- Components are ordered by the amount of variance they explain.
+
+Scaling
+- PCA can be dominated by variables with large numerical scales if raw variables are used.
+- Standardising variables before PCA is often appropriate when units or scales differ.
+
+R implementation
+- prcomp() can be used for PCA.
+- scale. = TRUE standardises variables.
+- The rotation matrix contains component loadings.
+- The x matrix contains component scores for observations.
+- summary() reports standard deviations and proportions of variance explained.
+
+Interpretation
+- Loadings show how strongly original variables contribute to each component.
+- Scores place observations in the new component space.
+- PC1 versus PC2 plots can be used to visualise structure after reduction.
+
+============================================================
+12. NEURAL NETWORKS
+============================================================
+
+General concept
+- A neural network consists of connected processing units arranged in layers.
+- Inputs feed into one or more hidden layers, which then feed into an output layer.
+- Connections have weights learned during training.
+- Activation functions transform weighted inputs.
+
+Classification
+- Neural networks can perform classification.
+- A logistic activation function can be used for classification outputs.
+- The current classification demonstration explores different hidden-layer structures, including one hidden layer with different numbers of nodes and multiple hidden layers.
+
+Prediction
+- Neural networks can also predict continuous numerical outcomes.
+- The output and activation choices differ depending on whether the task is classification or numerical prediction.
+
+Model complexity
+- More hidden nodes or layers increase model flexibility.
+- Greater flexibility can also increase training time and the risk of overfitting.
+- Network architecture and other hyperparameters should be evaluated using validation performance.
+
+============================================================
+13. NAIVE BAYES
+============================================================
+
+General concept
+- Naive Bayes is a probabilistic classification method based on Bayes' rule.
+- It estimates the probability of each class given the observed predictors.
+- The "naive" assumption is that predictors are conditionally independent given the class.
+- The method can work surprisingly well even when this assumption is not perfectly satisfied.
+
+Categorical predictors
+- Naive Bayes can naturally work with categorical predictors and does not always require the same dummy-variable treatment used by distance-based or regression methods.
+
+Use
+- It is primarily a classification method.
+- It can be fast and effective for high-dimensional problems such as text classification.
+
+============================================================
+14. LOGISTIC REGRESSION
+============================================================
+
+Purpose
+- Logistic regression is used for classification when the outcome is categorical, commonly binary.
+- A fitted binary logistic model can produce an estimated probability for the positive class.
+- In R, the Spell Book demonstrates logistic regression using a binomial generalised linear model and caret-based workflows.
+
+From probabilities to classes
+- Predicted probabilities can be converted to class labels using a cutoff.
+- A cutoff of 0.50 is a common starting point but is not automatically optimal.
+- Changing the cutoff changes the confusion matrix and the balance between sensitivity and specificity.
+- One Spell Book demonstration also illustrates selection of a cutoff using Youden's index, which seeks a favourable combination of sensitivity and specificity.
+
+Evaluation
+- Evaluate logistic regression on validation data rather than relying only on the fitted training model.
+- Useful measures include the confusion matrix, sensitivity, specificity, precision, F1 and ROC/AUC.
+- Gains, lift, response and cumulative response plots can also be used when ranked probability scores matter.
+
+Prediction
+- Logistic regression can be used to score new records after the model has been selected and evaluated.
+- Keep the distinction between the predicted probability and the final class produced after applying a cutoff.
+
+============================================================
+15. DISCRIMINANT ANALYSIS
+============================================================
+
+General concept
+- Discriminant analysis is a supervised classification method.
+- The current Spell Book demonstrates classification with a training/validation split and also demonstrates posterior class probabilities.
+- Linear discriminant analysis can be fitted using class-labelled training records and numerical predictors.
+
+Probabilities and prediction
+- A fitted discriminant model can return posterior probabilities for each possible class.
+- The predicted class is related to these class probabilities rather than being an unexplained label.
+- Validation data should be used to evaluate performance on records that were not used to fit the model.
+
+============================================================
+16. ASSOCIATION RULES AND MARKET-BASKET ANALYSIS
+============================================================
+
+General concept
+- Association rules look for combinations of items or events that occur together.
+- Market-basket analysis is a common application, but the same logic can be applied to other transaction-style data.
+- Data are represented as transactions containing items.
+
+Rule structure
+- A rule has an antecedent on the left-hand side and a consequent on the right-hand side.
+- The Apriori algorithm can generate candidate rules subject to minimum support and confidence thresholds.
+
+Support
+- Support measures how frequently the complete rule occurs in the transaction data.
+- A very rare rule can have high confidence but still be of limited practical use, so support matters.
+
+Confidence
+- Confidence measures how often the consequent appears among transactions containing the antecedent.
+- It can be read as a conditional success rate for the rule.
+
+Lift
+- Lift compares the observed co-occurrence with what would be expected without the association.
+- Lift equal to 1 indicates no improvement over independence.
+- Lift greater than 1 indicates a positive association; larger values indicate a stronger departure from independence.
+- Rules can be sorted by lift, but interpretation should still consider support, confidence and practical usefulness.
+
+============================================================
+17. COLLABORATIVE FILTERING AND RECOMMENDER SYSTEMS
+============================================================
+
+Ratings data
+- Collaborative filtering can use a user-by-item rating matrix containing observed ratings and missing entries for items not yet rated.
+- Similarity between users or items can be calculated from the available ratings.
+- The current Spell Book demonstration uses cosine similarity.
+
+Item-based collaborative filtering
+- The current demonstration uses item-based collaborative filtering (IBCF).
+- The recommender learns from the observed rating matrix and predicts ratings for currently unrated items.
+- Predicted ratings can then be used to produce a top-N recommendation.
+
+Interpretation
+- A recommendation is based on patterns in the ratings data; it is not evidence that the recommended item is objectively best.
+- Sparse ratings and limited overlap between users or items can make similarity and recommendations less stable.
+
+============================================================
+18. TEXT ANALYTICS AND TEXT CLUSTERING
+============================================================
+
+Text preparation
+- Text analytics usually requires substantial preprocessing before modelling.
+- The Spell Book demonstrates converting text to lower case, removing numbers, removing common and custom stop words, removing punctuation, stripping extra white space and stemming words to root forms.
+- Text can be organised as a corpus and converted into a term-document representation.
+
+Frequency analysis
+- Word counts can identify frequently occurring terms.
+- Frequent words can be displayed in tables, bar charts or word clouds.
+- Frequency alone does not establish meaning, importance or sentiment; interpretation still matters.
+
+Sentiment analysis
+- The Spell Book demonstrates assigning sentiment categories to words and aggregating those results for exploratory sentiment analysis.
+- Sentiment dictionaries are a rule-based representation of language and should not be treated as perfect understanding of context.
+
+Text clustering
+- Text records can be converted into numerical representations and then clustered.
+- The current demonstrations use k-means clustering and compare candidate values of k with elbow and silhouette methods.
+- Cluster interpretation can use frequent words and cluster-specific TF-IDF-style summaries to identify distinguishing terms.
+- Analysts can assign descriptive labels to clusters only after examining what the clusters contain.
+
+Latent Semantic Analysis (LSA)
+- Another Spell Book demonstration uses Latent Semantic Analysis before clustering.
+- LSA reduces a high-dimensional word-document representation into a smaller semantic space.
+- Documents using different vocabulary but discussing similar themes may become closer in that reduced space.
+- k-means can then be applied to the reduced LSA representation.
+
+============================================================
+19. LARGE LANGUAGE MODELS AND CHATBOTS
+============================================================
+
+Course context
+- The current BUAN 4310 Spell Book includes short and extended demonstrations related to large language models.
+- It also retains the earlier yeoda chatbot demonstration based on matching a user's question to stored input and response text.
+
+Retrieval-style chatbot idea
+- A non-LLM chatbot can compare a new question with stored examples and return the most relevant response.
+- Such a system is limited by the supplied input/response knowledge and by the similarity method used to match questions.
+
+LLM context
+- Large language models can produce more flexible natural-language responses than fixed retrieval systems.
+- Course demonstrations should be treated as demonstrations of the technology and workflow; do not infer additional syllabus requirements from their presence in the Spell Book.
+
+============================================================
+20. CURRENT SPELL BOOK COVERAGE AND IMPLEMENTATIONS
+============================================================
+
+The current BUAN 4310 Spell Book includes demonstrations or examples covering:
+- Basic data manipulation
+- Classification trees
+- Collaborative filtering
+- Cross-validation
+- Data transformation
+- Data visualisation
+- Descriptive data exploration
+- Discriminant analysis
+- GitHub
+- Hierarchical clustering
+- Interactive data visualisation
+- Preliminary data exploration
+- k-nearest neighbours classification
+- k-nearest neighbours regression
+- Large datasets, including an AWS-oriented demonstration
+- Large language models
+- Linear regression
+- Linear regression with transformations
+- Logistic regression
+- Line graphs
+- Market-basket analysis / association rules
+- Model diagnostics
+- Naive Bayes
+- Neural-network classification
+- Neural-network numerical prediction
+- Non-hierarchical clustering
+- Principal component analysis
+- Regression trees, including extended demonstrations
+- Text analytics and text clustering
+- Unbalanced class data
+
+R and Python / Parseltongue
+- The Spell Book provides Python/Parseltongue counterparts for several topics, including classification trees, hierarchical clustering, kNN, logistic regression, Naive Bayes, non-hierarchical clustering and regression trees.
+- The conceptual principles are shared across languages even though function names, libraries and syntax differ.
+- If asked for code, distinguish clearly between R and Python syntax.
+
+Coverage caution
+- Presence in the Spell Book shows that a demonstration exists; it does not by itself prove that the topic is currently assessed, required, optional or covered to a particular depth in a specific term.
+
+============================================================
+21. MODEL-SELECTION PRINCIPLES
+============================================================
+
+No single metric or algorithm is universally best.
+When comparing models:
+- Use validation or cross-validation performance.
+- Choose metrics that reflect the business or analytical objective.
+- Consider the relative cost of false positives and false negatives.
+- Consider interpretability, stability and computational cost.
+- Be cautious about training performance that is much better than validation performance.
+
+============================================================
+22. RESPONSE BEHAVIOUR FOR THE CHATBOT
+============================================================
+
+For questions clearly supported by these notes:
+- Use these notes as the primary source.
+- Preserve the terminology and framing used here.
+- Give concise, accurate answers.
+- Use British English.
+- When both R and Python versions exist, answer in the language requested by the user; if no language is specified, explain the concept first rather than assuming a language.
+
+For machine-learning questions not addressed here:
+- General machine-learning knowledge may be used.
+- Clearly distinguish general knowledge from course-specific claims if the distinction matters.
+- Do not state or imply whether the topic is required, optional, assessed, or part of a syllabus.
+- Do not tell the user that the topic is "not in the required materials" or similar unless explicitly asked about source coverage.
+
+For questions about course coverage:
+- Use the notes and current Spell Book coverage listed above.
+- Do not infer assessment requirements, deadlines, grading rules or syllabus status merely from the existence of a demonstration.
+
+For general non-course questions:
+- General knowledge may be used.
+- Star Wars questions may be answered from general knowledge.

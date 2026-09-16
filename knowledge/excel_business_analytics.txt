@@ -1,0 +1,239 @@
+DCLXVI — EXCEL AND BUSINESS ANALYTICS
+
+Purpose
+-------
+This file grounds DCLXVI in Excel and business-analytics material that Benjamin Yeo teaches.
+It is based on supplied lecture slides and spreadsheet demonstrations. Use British English in
+explanations, while preserving official Excel function and tool names.
+
+============================================================
+1. SPREADSHEET BASICS
+============================================================
+
+Why spreadsheets
+- Spreadsheets provide a flexible environment for organising data, building analytical models,
+  performing calculations and communicating results.
+- Good spreadsheet models separate data/assumptions, calculations and outputs clearly enough that
+  another user can follow the logic.
+
+Core Excel ideas
+- A formula begins with = and may combine cell references, operators and functions.
+- Relative references change when a formula is copied to another location.
+- Absolute references, such as $B$4, remain fixed when copied.
+- Mixed references fix either the row or the column.
+- Copying formulas efficiently is a central spreadsheet skill, but the copied references must be
+  checked to ensure they still represent the intended logic.
+
+Basic functions and logic
+- Common functions include SUM, AVERAGE, MIN, MAX and COUNT-style functions.
+- Logical functions include IF and related IF-type functions.
+- IF evaluates a condition and returns different results depending on whether the condition is true
+  or false.
+- Logical tests may be combined where a business rule requires more than one condition.
+
+Lookup functions
+- VLOOKUP can retrieve a value from a lookup table based on a key in the first column of the lookup
+  range.
+- INDEX returns the value at a specified position in a range.
+- MATCH finds the position of a lookup value within a range.
+- INDEX and MATCH can be combined to perform flexible lookup operations.
+- The course also demonstrates combinations such as VLOOKUP + IF, VLOOKUP + MATCH, and INDEX + MATCH.
+- Approximate versus exact matching must be chosen deliberately; lookup assumptions should not be
+  left implicit.
+
+============================================================
+2. DATA VISUALISATION AND EXPLORATION IN EXCEL
+============================================================
+
+Visualisation
+- Visual displays can reveal patterns that are difficult to see in a table of numbers alone.
+- Excel chart types covered include column/bar, line, pie, area, scatter and bubble charts.
+- The appropriate chart depends on the analytical purpose; a chart should not be selected merely
+  because Excel can produce it.
+- Scatter charts are particularly useful for examining relationships between two numerical variables.
+- Geographic and other Excel visualisation tools may also be used where the data and question fit.
+
+Dashboards and compact displays
+- Dashboards combine multiple relevant displays to support monitoring or decision making.
+- Conditional formatting can make patterns, thresholds and unusual values more visible.
+- Sparklines provide compact, cell-level trend displays.
+- The Excel Camera tool can be used to create linked visual areas that support dashboard construction.
+
+Tables, sorting and filtering
+- Excel tables provide structured ranges that support sorting, filtering and calculations.
+- Sorting reorganises records by one or more fields.
+- Filtering displays records meeting specified criteria without deleting the other records.
+- AutoFilter supports common filtering tasks.
+- Pareto analysis focuses attention on the relatively small number of categories that account for a
+  large share of an outcome.
+
+Frequency distributions and histograms
+- Frequency distributions summarise how often values or categories occur.
+- Relative frequency expresses counts as proportions or percentages.
+- Numerical data can be grouped into bins for a histogram.
+- Bin choices affect the appearance and interpretation of a histogram.
+- Cumulative relative frequency tracks the proportion of observations at or below successive values.
+
+Percentiles and quartiles
+- Percentiles describe the relative position of a value within a distribution.
+- Quartiles divide ordered data into four parts.
+- These measures help describe distribution and can support identification of unusual observations.
+
+Cross-tabulation and PivotTables
+- Cross-tabulations summarise relationships between categorical variables.
+- PivotTables provide an interactive way to aggregate and reorganise data.
+- PivotTable value-field settings control the statistic being displayed.
+- PivotCharts provide chart views linked to PivotTable summaries.
+- Slicers provide interactive filtering controls.
+- PivotTables, PivotCharts and slicers can be combined in dashboards.
+
+============================================================
+3. DESCRIPTIVE STATISTICS
+============================================================
+
+Population and sample
+- A population is the complete set of items or observations of interest.
+- A sample is a subset used to learn about the population.
+
+Measures of location
+- Arithmetic mean: sum of values divided by the number of values.
+- Median: middle value after ordering the data.
+- Mode: most frequently occurring value.
+- Midrange: average of the minimum and maximum.
+- Different measures of location can give different impressions when a distribution is skewed or
+  contains extreme values.
+
+Measures of dispersion
+- Range: maximum minus minimum.
+- Interquartile range: spread of the middle 50% of ordered data.
+- Variance: average squared deviation from the mean, with the precise denominator depending on
+  whether a population or sample variance is being calculated.
+- Standard deviation: square root of variance; expresses dispersion in the original measurement units.
+- Coefficient of variation expresses standard deviation relative to the mean and can assist comparisons
+  across different scales.
+
+Shape and standardisation
+- Skewness describes asymmetry in a distribution.
+- Kurtosis describes aspects of distribution shape/tail behaviour.
+- A z-score expresses a value in standard-deviation units relative to the mean.
+- Chebyshev's theorem provides a general bound on the proportion of observations within a given
+  number of standard deviations, without requiring normality.
+- The empirical rule describes approximate 68/95/99.7% coverage for a roughly normal distribution.
+
+Other descriptive tools
+- The Excel Descriptive Statistics tool can generate multiple summary measures at once.
+- Statistical summaries can also be produced within PivotTables.
+- Proportions summarise categorical outcomes.
+- Covariance and correlation describe relationships between numerical variables.
+- Correlation is scaled between -1 and 1 and measures linear association; it does not establish causation.
+- Outliers should be investigated rather than automatically deleted.
+- Sample statistics vary from sample to sample.
+
+============================================================
+4. STATISTICAL INFERENCE IN EXCEL
+============================================================
+
+Hypothesis testing
+- Statistical inference uses sample information to draw conclusions about populations.
+- A hypothesis test begins with a null hypothesis and an alternative hypothesis.
+- The form of the hypotheses depends on the research/business question and whether a one- or
+  two-tailed test is appropriate.
+- A test statistic summarises how far the observed sample result is from what would be expected if
+  the null hypothesis were true.
+- A p-value indicates how unusual the observed result would be under the null hypothesis.
+- A decision threshold (alpha) is chosen before interpreting the p-value.
+
+Errors and power
+- Type I error: rejecting a true null hypothesis.
+- Type II error: failing to reject a false null hypothesis.
+- Test power is the probability of detecting an effect when the relevant alternative is true.
+- Power is influenced by factors such as effect size, sample size and variability.
+
+Tests covered
+- One-sample tests for a mean.
+- One-sample tests for a proportion.
+- Two-sample tests for differences in means.
+- Paired-sample tests for means.
+- F-tests for equality of variances.
+- Analysis of variance (ANOVA) for comparing multiple means.
+- Chi-square tests for independence between categorical variables.
+- The Excel Analysis ToolPak is used for several procedures; selecting the correct procedure and
+  interpreting the output are part of the analysis.
+
+============================================================
+5. TRENDLINES AND REGRESSION IN EXCEL
+============================================================
+
+Trendlines
+- Excel trendlines can be used to model patterns such as linear and nonlinear relationships.
+- R-squared summarises the proportion of variation in the outcome explained by a fitted model, but a
+  high R-squared alone does not prove that a model is appropriate.
+- Polynomial models can fit data flexibly and therefore require caution, especially outside the range
+  of observed data.
+
+Simple linear regression
+- Simple linear regression models a numerical outcome as a linear function of one predictor.
+- Least squares chooses coefficients that minimise the sum of squared residuals.
+- A residual is the difference between an observed outcome and its fitted/predicted value.
+- Excel can estimate regression coefficients using functions or the Regression tool.
+
+Regression inference and diagnostics
+- Regression output includes model fit statistics, ANOVA information, coefficient estimates and
+  hypothesis tests.
+- p-values and confidence intervals help evaluate individual coefficients in an explanatory setting.
+- Residual analysis is used to examine whether modelling assumptions appear reasonable.
+- Practical evaluation should not rely on a single diagnostic or statistic.
+
+Multiple regression and model building
+- Multiple regression uses two or more predictors.
+- Model-building decisions should be systematic rather than based only on maximising in-sample fit.
+- Multicollinearity occurs when predictors contain strongly overlapping information and can make
+  coefficient estimates unstable or difficult to interpret.
+- Overfitting occurs when a model captures sample-specific noise and performs poorly on new data.
+- Categorical predictors can be incorporated through indicator/dummy variables.
+- Interaction terms allow the effect of one predictor to depend on another.
+- Nonlinear terms can be added when the relationship is not adequately represented by a straight line.
+
+============================================================
+6. LINEAR OPTIMISATION AND EXCEL SOLVER
+============================================================
+
+Model components
+- A linear optimisation model contains decision variables, an objective function and constraints.
+- The objective may maximise or minimise a quantity such as profit, return or cost.
+- Constraints represent resource limits, business rules or required relationships.
+- Linear optimisation assumes that the relevant relationships can be expressed linearly.
+
+Spreadsheet implementation
+- Decision-variable cells hold the quantities Solver may change.
+- The objective cell calculates the value to maximise or minimise.
+- Constraint calculations translate resource usage or other requirements into spreadsheet formulas.
+- SUMPRODUCT is useful for calculating linear totals such as total profit or total resource use.
+- Absolute references are useful where formulas repeatedly refer to decision-variable cells.
+
+Solver
+- Excel Solver can optimise a spreadsheet model subject to constraints.
+- For linear models, the Simplex LP solving method is appropriate.
+- Solver reports whether it found a feasible/optimal solution under the stated model.
+- An Answer Report summarises the objective, variable values and constraint status.
+- A Sensitivity Report can provide information such as reduced costs, shadow prices and allowable
+  increases/decreases for linear models.
+
+Supplied spreadsheet demonstrations
+- Sklenka Skis: chooses quantities of two ski products, subject to fabrication/finishing hours and a
+  product-mix relationship, to maximise total profit.
+- Investment problem: allocates funds across bonds, mutual funds and money-market investments under
+  portfolio constraints; the supplied workbook includes Solver Answer and Sensitivity Reports.
+- HotSprings Spas: chooses production quantities for two spa models to maximise profit subject to
+  labour, piping and pump availability.
+
+============================================================
+7. RESPONSE BEHAVIOUR
+============================================================
+
+- Treat this file as evidence that Benjamin Yeo teaches these Excel/business-analytics concepts.
+- When asked how a technique is taught, use the framing here and do not invent assignments or grading rules.
+- Distinguish descriptive statistics, statistical inference, predictive modelling and optimisation.
+- If the user asks for an Excel formula, use the official function name and explain cell-reference logic.
+- General Excel knowledge may supplement an explanation, but do not claim that an unsupplied feature
+  is part of Benjamin Yeo's course merely because Excel supports it.

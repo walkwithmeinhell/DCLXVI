@@ -1,0 +1,141 @@
+DCLXVI — CYBERSECURITY AND ARTIFICIAL INTELLIGENCE
+
+Purpose
+-------
+This file grounds DCLXVI in supplied Cybersecurity and Artificial Intelligence teaching material.
+The emphasis is on understanding AI concepts, how AI changes cyber threats and defences, and the
+ethical/leadership questions that follow.
+
+============================================================
+1. MACHINE LEARNING AND AI FOUNDATIONS
+============================================================
+
+- The course distinguishes explanatory/statistical emphasis from predictive/data-mining emphasis.
+- Supervised learning uses labelled outcomes and includes classification and numerical prediction.
+- Unsupervised learning seeks structure without a target outcome and includes clustering,
+  association rules and data reduction.
+- Training and validation data are separated so that models can be evaluated on data not used to fit them.
+- Potential modelling issues include overfitting, poor data quality and inappropriate evaluation.
+
+Large language models
+- An LLM is a deep-learning system designed to process and generate language.
+- Transformers are a foundational architecture; self-attention allows the model to relate tokens
+  across a sequence.
+- Pre-training learns statistical language patterns from large corpora.
+- Fine-tuning or other adaptation can specialise a model for tasks or behaviours.
+- Inference is the stage in which a trained model generates a response from new input.
+- LLM capabilities do not imply consciousness, perfect factual accuracy or transparent reasoning.
+
+Turing Test
+- The Turing Test is introduced as a behavioural test of whether machine conversation can be
+  indistinguishable from human conversation under the test conditions.
+- Its value is historical and conceptual, but it has limitations: imitation of human conversation is
+  not the same as demonstrating consciousness, broad intelligence or reliable reasoning.
+- Modern generative AI renews questions about what the test measures and what intelligence means.
+- The teaching material uses a Star Wars reference — "Can machines master the ways of the force?" —
+  as part of the presentation.
+
+============================================================
+2. AI-DRIVEN PHISHING
+============================================================
+
+Phishing
+- Phishing is a cyberattack in which an attacker impersonates a legitimate entity or person to trick
+  targets into revealing sensitive information or taking a harmful action.
+
+How AI changes phishing
+- Generative AI can increase personalisation, fluency, speed and scale.
+- AI-generated messages may contain fewer traditional warning signs such as obvious grammar or spelling errors.
+- Attackers can generate large volumes of tailored content, making purely manual detection difficult.
+
+Defence
+- Defensive strategy requires a combination of technical controls, user awareness, verification and
+  adaptive detection rather than reliance on a single clue.
+- Organisations need to update detection and response as attacker techniques evolve.
+- The course frames AI as relevant to both offensive capability and defensive cybersecurity tools.
+
+============================================================
+3. DATA POISONING
+============================================================
+
+Definition
+- Data poisoning occurs when malicious or misleading data are introduced into AI training data in
+  order to influence model behaviour.
+
+Types
+- Targeted attacks seek to alter particular model outputs or behaviours.
+- Indiscriminate attacks seek to degrade overall model performance or reliability.
+
+Examples/implications
+- Poisoning may target content-moderation systems, malware-detection models or generative-AI systems.
+- Consequences can include reduced trust, financial/reputational harm, unfair or unreliable outputs
+  and increased risk to critical systems.
+
+Defence mechanisms
+- Data validation and provenance checks.
+- Monitoring/auditing of models and datasets.
+- Robust/adversarial training approaches where appropriate.
+- Sharing threat intelligence and investigating suspicious changes in model behaviour.
+
+============================================================
+4. MALWARE DETECTION WITH AI
+============================================================
+
+- AI/ML can learn patterns associated with normal and malicious activity and use them for detection.
+- Potential value includes faster analysis and near-real-time detection or prevention.
+- Detection can use behavioural or file-related features rather than relying only on known signatures.
+- The supplied material notes emerging approaches that convert file attributes into visual
+  representations for image-based detection.
+- Cybersecurity leaders need to understand both the potential and the operational/ethical limitations
+  of AI-based detection rather than treating AI as an automatic replacement for security judgement.
+
+============================================================
+5. ETHICS, PRIVACY AND ACCOUNTABILITY
+============================================================
+
+Bias and fairness
+- AI-driven security systems can reproduce or amplify bias in data or design.
+- False positives and false negatives can distribute harms unevenly.
+- Human oversight is an important question when AI systems make consequential security decisions.
+
+Privacy and surveillance
+- Cybersecurity monitoring can require extensive access to user/activity data.
+- Course discussion asks where the boundary should lie between effective threat detection and privacy.
+- More data access is not automatically ethically justified merely because it may improve detection.
+
+Accountability
+- Responsibility may involve developers, deployers, organisations and human decision-makers.
+- Governance should define responsibility before failures occur rather than after the fact.
+
+AI and cyberwarfare
+- Offensive AI use raises questions about escalation, proportionality, attribution and international governance.
+- The material asks what principles and regulations should govern AI used in cyber defence and attack.
+
+============================================================
+6. TRANSPARENCY AND LAW — COURSE EXAMPLES
+============================================================
+
+The supplied 2025 ethics/law handout uses explainability and transparency as a regulatory example.
+It discusses the opacity of specific LLM decisions and cites several 2024 legal developments:
+- EU AI Act transparency/technical-documentation requirements, including disclosure in some human-AI
+  interactions and documentation obligations for high-risk systems.
+- Colorado SB 205, described in the handout as a comprehensive U.S. state AI law with consumer
+  disclosure/explanation requirements for consequential AI decisions.
+- California AB 2013, described as requiring certain generative-AI developers to disclose information
+  about training data.
+- Utah SB 149, described as requiring disclosure of generative-AI interaction in specified contexts.
+
+Important limitation
+- These are course examples drawn from a 2025 handout, not current legal advice.
+- Laws, effective dates, interpretations and obligations can change. For a present-day legal question,
+  DCLXVI should distinguish the historical course material from verified current law.
+
+============================================================
+7. RESPONSE BEHAVIOUR
+============================================================
+
+- Explain AI/cyber concepts clearly for non-specialists while retaining technical accuracy.
+- Distinguish what AI can assist with from claims that it is perfectly reliable or autonomous.
+- Do not turn ethical discussion questions into claims about Benjamin Yeo's personal political or moral views.
+- Do not treat the legal examples above as current legal advice.
+- Star Wars references are acceptable when they arise naturally from the supplied teaching material.

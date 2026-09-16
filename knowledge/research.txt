@@ -1,0 +1,97 @@
+DCLXVI — RESEARCH
+
+Research portfolio
+------------------
+Unifying research approach
+-------------------------
+The main connection across Benjamin Yeo's scholarship is methodological rather than topical.
+
+- He applies machine-learning and statistical-analysis methods to a wide variety of substantive
+  topics.
+- His research is intentionally not confined to one narrow subject area.
+- A central belief is that the same analytical methods can be applied creatively to different
+  problems and domains.
+- Topics have included artificial intelligence, data science, industry performance, productivity,
+  innovation, the IT workforce, advertising, consumer behaviour, finance and corporate social
+  responsibility, but the recurring thread is the analytical approach.
+- When describing his research, lead with this methodological connection before listing individual
+  topic areas.
+- It is appropriate to describe the research as the creative application of machine-learning and
+  statistical methods across different contexts.
+
+Research philosophy / personal framing
+--------------------------------------
+Benjamin likes Bruce Lee's phrase "be water, my friend" as a way of expressing this research
+philosophy. The phrase captures the idea of adapting analytical methods to different research
+problems rather than tying the methods to one fixed topic.
+
+Use this reference sparingly and naturally. It is a personal framing for research flexibility and
+creative application of methods, not evidence that Bruce Lee influenced every individual study.
+
+Benjamin Yeo's published and professional research spans several connected areas rather than one
+single narrow topic.
+
+1. Artificial intelligence, data science and analytics
+- Future directions and public perceptions of AI.
+- Data-science knowledge gaps between university teaching and industry demand.
+- Machine-learning approaches to financial-market behaviour.
+- Current professional work as a data scientist on machine learning and natural language processing.
+
+2. Technology, productivity and industry performance
+- The productivity paradox and the role of technology capability.
+- ICT, financing, workforce and institutional conditions in manufacturing and service industries.
+- High-tech industry performance and change over time.
+- Business-process reengineering and service-oriented architecture.
+
+3. Innovation, universities and the knowledge economy
+- University technological innovation and commercialisation.
+- Societal and regional impacts of innovation.
+- Regional innovation capacity and knowledge-based economic development.
+
+4. IT workforce and organisational context
+- IT-worker job satisfaction and turnover across countries.
+- The role of cultural, political, labour-market and demographic context.
+- Gender and environmental context in the IT workforce.
+
+5. Digital advertising, media and consumer behaviour
+- Augmented-reality advertising and virtual mirrors.
+- Consumer-generated visual advertising in social-media brand communities.
+- Customised digital advertising.
+- Social-TV multitasking and cross-media advertising.
+- Location-based advertising and product placement.
+
+6. Corporate and financial behaviour
+- Corporate social responsibility and firm risk over time.
+- Social-media rumour propagation and abnormal trading behaviour.
+
+7. Information systems in social and institutional context
+- E-government and situated knowledge-management context.
+- Technology, social context and economic development.
+
+Methods appearing across the research
+-------------------------------------
+Documented methods across the publication record include:
+- machine learning and decision trees
+- clustering
+- regression and time-varying analysis
+- text mining / natural language processing
+- cross-national survey analysis
+- experiments and factorial designs
+- economic and regional data analysis
+- process/design-oriented information-systems methods
+
+Do not infer that every method above is used in every project. Use publications.txt for
+paper-specific methods.
+
+Research trajectory
+-------------------
+The record ranges from early work on digital media, e-government, the IT workforce and regional
+innovation through industry productivity, university innovation and digital advertising, to more
+recent work on data science and AI. This is a descriptive chronology, not a claim that earlier
+research interests have been abandoned.
+
+Current personal-research grounding
+-----------------------------------
+DCLXVI may discuss the research documented in publications.txt and the CV-derived records here.
+If asked about an unpublished project, motivation, preference, or future research plan not contained
+in the archive, it should say that the archive does not document it rather than inventing an answer.

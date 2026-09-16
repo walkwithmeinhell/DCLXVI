@@ -1,0 +1,562 @@
+DCLXVI — SCHOLARLY PUBLICATIONS
+
+IMPORTANT
+---------
+The summaries below are concise paraphrases of publication abstracts/article records. They are not
+verbatim publisher abstracts. Official article titles are preserved even when they use American
+English spelling. Surrounding descriptions use British English.
+
+============================================================
+JOURNAL ARTICLES
+============================================================
+
+[PUBLICATION 01]
+Title: Where Does AI Go from Here?
+Authors: James Lee; Benjamin Yeo
+Journal: Communications of the Association for Information Systems
+Volume: 57
+Status in CV: In press
+Summary:
+The study looks at AI's historical development, its current landscape and possible future direction.
+It uses natural-language-processing sentiment analysis to examine public perceptions of AI and
+discusses challenges and risks. The paper develops a framework for thinking about a more symbiotic
+relationship between AI systems and humans rather than treating technological progress as a purely
+technical trajectory.
+Source link: https://aisel.aisnet.org/cais/vol57/iss1/70/
+[/PUBLICATION]
+
+[PUBLICATION 02]
+Title: Alternate View for Investigating Data Science Knowledge Gaps: A U.S. Perspective
+Authors: Delvin Grant; Benjamin Yeo; Binu Jacob
+Journal: Information Development
+DOI: 10.1177/02666669241307022
+Summary:
+The paper compares language used in U.S. university data-science syllabi with language appearing in
+industry job advertisements. Text-mining results suggest that university programmes provide
+relatively strong preparation in some softer or broader skills while gaps remain in some technical
+and analytical requirements sought by employers. The study frames the issue as an industry-
+academia alignment problem rather than assuming that either side provides a complete definition of
+data-science knowledge.
+[/PUBLICATION]
+
+[PUBLICATION 03]
+Title: The Technology Paradox Explained in Stages and Technology Presence
+Authors: Benjamin Yeo; Delvin Grant
+Year: 2024
+Journal: International Journal of Business and Economics
+Volume/Issue: 23(1)
+Pages: 87–112
+Summary:
+Using U.S. regional economic data, the study examines why technology investment does not produce
+the same performance effect in every setting. Regions are considered at different stages of growth
+and technology presence. The results indicate that areas with stronger technology presence are
+better able to leverage technology investment, while the effects vary with stage of development.
+The paper therefore treats the productivity/technology paradox as context-dependent rather than as a
+single universal relationship.
+[/PUBLICATION]
+
+[PUBLICATION 04]
+Title: How Virtual Mirrors in Advertising Influence Attitudes about Beauty Products
+Authors: Hui-Fei Lin; Benjamin Yeo; Tsai-Yi Lu
+Year: 2024
+Journal: Journal of Advertising Research
+Volume/Issue: 64(3)
+Pages: 372–392
+DOI: 10.2501/JAR-2024-016
+Summary:
+The study examines augmented-reality virtual mirrors used in beauty-product advertising. It
+considers self-view versus other-view presentation, endorsement, beauty filters and user
+characteristics such as narcissism/self-presentation. The findings indicate that virtual-mirror
+design can improve service and product attitudes through mediating mechanisms, although stronger
+attitudes do not automatically translate into purchase intention. The work highlights how AR
+features and consumer psychology interact.
+[/PUBLICATION]
+
+[PUBLICATION 05]
+Title: Consumer-Generated Visual Advertisements in Social Media Brand Communities
+Authors: Hui-Fei Lin; Pei-Chih Lin; Benjamin Yeo
+Year: 2024
+Journal: International Journal of Communication
+Volume: 18
+Summary:
+The study develops and tests a model of consumer-generated visual advertising within social-media
+brand communities. It links users' motivations and perceived value to brand attitudes, community
+identification, engagement, word-of-mouth and purchase-related outcomes. The results show that the
+effects of consumer-generated advertising are tied to both the value users derive from participation
+and their relationship with the brand community.
+[/PUBLICATION]
+
+[PUBLICATION 06]
+Title: Effective Digital Advertising: The Influence of Customized Ads, Self-Esteem, and Product Attributes
+Authors: Evelyn Linardi; Hui-Fei Lin; Benjamin Yeo
+Year: 2024
+Journal: Journal of Creative Communications
+Volume/Issue: 19(2)
+Pages: 197–216
+Summary:
+A 2x2x2 experiment with 240 Taiwanese participants aged 16–34 examines customised versus
+non-customised advertising, utilitarian versus hedonic products, and high versus low self-esteem.
+Participants with higher self-esteem respond more favourably to customised advertising, while
+customisation has a different relationship with purchase intention among lower-self-esteem
+participants. Hedonic product attributes also matter, particularly under non-customised advertising.
+The paper shows that personalisation is not uniformly effective across audiences or product types.
+[/PUBLICATION]
+
+[PUBLICATION 07]
+Title: Augmented Reality Advertising in Entertainment Programming: An Exploration Across Cultures
+Authors: Hui-Fei Lin; Hsin-yi Sandy Tsai; Benjamin Yeo
+Year: 2023
+Journal: Journal of Creative Communications
+Volume/Issue: 18(1)
+Pages: 40–60
+Summary:
+Using a cross-cultural factorial experiment involving U.S. and Taiwanese participants, the study
+tests augmented-reality advertising embedded in entertainment programming. Effects vary by culture,
+advertising congruence and presentation characteristics. U.S. participants show stronger recall for
+some incongruent executions, while Taiwanese participants respond more positively to some congruent,
+dynamic AR sponsorship formats. The study argues that AR advertising strategy should be adapted to
+cultural context rather than assumed to work identically across markets.
+[/PUBLICATION]
+
+[PUBLICATION 08]
+Title: Predicting Abnormal Trading Behavior from Internet Rumor Propagation: A Machine Learning Approach
+Authors: Li-Chen Cheng; Wei-Ting Lu; Benjamin Yeo
+Year: 2023
+Journal: Financial Innovation
+Volume/Issue: 9(3)
+DOI: 10.1186/s40854-022-00423-9
+Summary:
+The paper investigates whether patterns in internet-rumour propagation can help predict abnormal
+trading behaviour. It compares machine-learning decision-tree models using rumour-related
+information with more traditional financial/fundamental information. The results indicate that
+rumour-propagation variables can provide stronger predictive information about abnormal trading in
+the studied setting, demonstrating the value of online behavioural data for financial-market
+analysis.
+[/PUBLICATION]
+
+[PUBLICATION 09]
+Title: Exploratory Study of Societal Contexts and Industry Performance
+Authors: Delvin Grant; Benjamin Yeo
+Year: 2022
+Journal: International Journal of E-Business Research
+Volume/Issue: 18(1)
+Summary:
+The study uses an influence-impact framework and data-mining analysis to investigate how technology
+and broader societal conditions relate to industry performance. The findings suggest that ICT is
+important but not sufficient on its own: technical advancement, financing and geographical/contextual
+conditions also shape performance, and their importance changes across stages of development.
+[/PUBLICATION]
+
+[PUBLICATION 10]
+Title: One Size Does Not Fit All: Global Perspectives on IT Worker Turnover
+Authors: Benjamin Yeo; Alexander Serenko; Prashant Palvia
+Journal: IEEE Transactions on Engineering Management
+Volume: 71
+Pages: 2843–2852
+DOI: 10.1109/TEM.2022.3196585
+Summary:
+Using survey data from more than 10,000 IT workers across 37 countries, the study examines whether a
+turnover model developed in the United States transfers effectively to other national settings.
+Decision-tree results show that the U.S. model's applicability declines as cultural, political and
+labour-market conditions differ from the U.S.; simple geographical distance is not the key issue.
+The paper cautions managers and researchers against treating U.S.-centred IT-workforce models as
+universally portable.
+[/PUBLICATION]
+
+[PUBLICATION 11]
+Title: A Business Process Reengineering Method
+Authors: Delvin Grant; Benjamin Yeo
+Year: 2022
+Journal: Issues in Information Systems
+Volume/Issue: 23(1)
+Pages: 1–12
+DOI: 10.48009/1_iis_2022_101
+Summary:
+The paper presents a practical ten-step business-process-reengineering method using UML-based
+modelling. It moves from identifying dissatisfaction and analysing the value chain through modelling
+the current and redesigned processes. The aim is to give organisations a more structured and
+disciplined way to manage process redesign and reduce the risks associated with loosely specified
+reengineering efforts.
+[/PUBLICATION]
+
+[PUBLICATION 12]
+Title: Resource-Based View of the Productivity Paradox
+Authors: Delvin Grant; Benjamin Yeo
+Year: 2022
+Journal: Technology Analysis & Strategic Management
+Volume/Issue: 36(3)
+Pages: 533–548
+DOI: 10.1080/09537325.2022.2042509
+Summary:
+Grounded in the resource-based view, the study tests whether technology capability changes the way
+technology investment, infrastructure and human capital affect sales growth. Firms/contexts are
+clustered into different levels of technology capability and then analysed comparatively. The
+results show that the value of particular resources changes with capability level, helping explain
+why technology spending alone does not consistently produce productivity gains.
+[/PUBLICATION]
+
+[PUBLICATION 13]
+Title: Impact of High-Tech Industries Over Time
+Author: Benjamin Yeo
+Year: 2021
+Journal: International Journal of Sociotechnology and Knowledge Development
+Volume/Issue: 14(1)
+Summary:
+Using time-series data for U.S. metropolitan areas, the study examines the changing economic
+importance of high-tech industries. The effect becomes more visible around the turn of the
+millennium, rises and later shows signs of decline. The paper emphasises that the economic role of
+high-tech industries is dynamic and has implications for theory, regional policy and development
+strategy.
+[/PUBLICATION]
+
+[PUBLICATION 14]
+Title: Enterprise Integration Using Service-Oriented Architecture
+Authors: Delvin Grant; Benjamin Yeo
+Year: 2021
+Journal: Issues in Information Systems
+Volume/Issue: 22(1)
+Pages: 164–177
+Summary:
+The paper addresses enterprise integration through service-oriented architecture (SOA). Using a
+design-oriented approach, it develops a structured method spanning multiple levels of integration
+from system specification through broader organisational/global concerns. The proposed framework
+includes components such as business-function systems and business-support services and is intended
+to make enterprise integration more systematic.
+[/PUBLICATION]
+
+[PUBLICATION 15]
+Title: Job Satisfaction of IT Workers in East Asia: The Role of Employee Demographics, Job Demographics, and Uncertainty Avoidance
+Authors: Benjamin Yeo; Alexander Serenko; Prashant Palvia; Osam Sato; Hiroshi Sasaki; Jie Yu; Yue Guo
+Year: 2021
+Journal: The DATA BASE for Advances in Information Systems
+Volume/Issue: 52(2)
+Pages: 94–126
+Summary:
+The study uses decision-tree analysis to examine IT-worker job satisfaction in Taiwan, Japan and
+China. Some relationships are shared across settings—for example, greater experience tends to raise
+satisfaction and stronger uncertainty avoidance tends to lower it—while other patterns are country
+specific. Education does not emerge as a general driver. The work reinforces the importance of
+national and cultural context when analysing IT-workforce outcomes.
+[/PUBLICATION]
+
+[PUBLICATION 16]
+Title: The Influence of Social TV Multitasking Behavior on the Effectiveness of Cross-Media Advertising
+Authors: Cheng-Hsuan Lin; Hui-Fei Lin; Benjamin Yeo; Pei-Chih Lin
+Year: 2021
+Journal: International Journal of Communication
+Volume: 15
+Pages: 1570–1594
+Summary:
+A 2x2 experiment examines advertising effectiveness when viewers engage in social-TV multitasking.
+The results suggest that video advertising can perform better in social-TV/second-screen contexts,
+whereas picture-based advertising can be more effective during individual television viewing.
+Media gratification partially explains these effects. The study shows that cross-media advertising
+effectiveness depends on the viewing environment and ad format.
+[/PUBLICATION]
+
+[PUBLICATION 17]
+Title: Time-Varying Relations Between Seven Dimensions of CSR and Firm Risk
+Authors: Wenling Lu; Benjamin Yeo
+Year: 2020
+Journal: Business and Professional Ethics Journal
+Volume/Issue: 39(3)
+Pages: 319–345
+Summary:
+Using U.S. data from 1991–2015, the study evaluates how seven dimensions of corporate social
+responsibility relate to total firm risk over time. The direction and strength of the relationships
+differ across CSR dimensions and market periods. The findings argue against treating CSR as a single
+uniform construct and suggest that firms may need to prioritise different CSR activities under
+different market conditions.
+[/PUBLICATION]
+
+[PUBLICATION 18]
+Title: What Drives University Technological Innovation Outcomes? A Re-Vitalised Investigation
+Author: Benjamin Yeo
+Year: 2019
+Journal: Journal of Information and Knowledge Management
+Volume/Issue: 18(3)
+Summary:
+Using a technology-organisation-environment perspective, the study re-examines the drivers of
+university technological innovation. It considers university-level and regional R&D factors and
+their current and future relationships with innovation outcomes. Results support positive effects
+for multiple inputs while showing that their future influence differs, reinforcing the need to
+consider both institutional and regional context.
+[/PUBLICATION]
+
+[PUBLICATION 19]
+Title: Are ICTs Really That Important in Driving Industry Performance?
+Authors: Delvin Grant; Benjamin Yeo
+Year: 2019
+Journal: Journal of Global Information Management
+Volume/Issue: 27(3)
+Pages: 101–119
+Summary:
+The study uses decision-tree analysis to compare ICT and financial factors as predictors of industry
+performance. Financial conditions—particularly access to bank loans and credit—emerge as stronger
+predictors than ICT measures in the analysed data. The paper argues that technology is relevant but
+should not be treated as an isolated or automatically dominant driver of business performance.
+[/PUBLICATION]
+
+[PUBLICATION 20]
+Title: Exploring the Factors Affecting Global Manufacturing Performance
+Authors: Benjamin Yeo; Delvin Grant
+Year: 2019
+Journal: Information Technology for Development
+Volume/Issue: 25(1)
+Pages: 92–121
+Summary:
+Using decision-tree analysis, the study examines factors associated with manufacturing sales growth
+across countries and periods. High ICT environments perform strongly in an earlier period but the
+relationship weakens later, while financing variables become more important. The findings show that
+ICT alone does not consistently explain manufacturing performance and that financial context and
+stage of development matter.
+[/PUBLICATION]
+
+[PUBLICATION 21]
+Title: Exploring the Effects of ICTs, Workforce, and Gender on Capacity Utilization
+Authors: Benjamin Yeo; Delvin Grant
+Year: 2019
+Journal: Information Technology for Development
+Volume/Issue: 25(1)
+Pages: 122–150
+Summary:
+The study examines how technology, organisational/workforce characteristics and gender-related
+workforce composition relate to capacity utilisation. Regression analysis tests multiple hypotheses
+covering factors such as workforce stability and skills, certification, training and female
+participation. Results demonstrate that capacity utilisation is shaped by a combination of
+technological and human/organisational conditions.
+[/PUBLICATION]
+
+[PUBLICATION 22]
+Title: An Exploratory Perspective on How Crime and Informality Affect BRICS Industry Performance
+Authors: Delvin Grant; Benjamin Yeo
+Year: 2018
+Journal: Journal of Global Information Technology Management
+Volume/Issue: 21(4)
+Pages: 242–261
+Summary:
+The paper studies industry performance in the BRICS economies through a technology-organisation-
+environment perspective, focusing on crime and informal-sector conditions. Regression results show
+that factors such as years operating informally, formal registration and perceptions of crime,
+theft or disorder can relate to performance. ICT may help offset some constraints, but it does not
+erase the importance of the surrounding institutional environment.
+[/PUBLICATION]
+
+[PUBLICATION 23]
+Title: A Global Perspective on Tech Investment, Financing, and ICT on Manufacturing and Service Industry Performance
+Authors: Delvin Grant; Benjamin Yeo
+Year: 2018
+Journal: International Journal of Information Management
+Volume: 43
+Pages: 130–145
+Summary:
+Using clustering and decision-tree analysis with global industry data, the study examines how
+technology investment, financing and ICT relate to performance across different stages of
+technology capability. Lower-technology groups depend more on loans and technology investment;
+during transition, technology investment becomes especially important; and in higher-technology
+settings, bank-lending conditions become more prominent. The effects therefore vary with
+technology maturity.
+[/PUBLICATION]
+
+[PUBLICATION 24]
+Title: Societal Impact of University Innovation
+Author: Benjamin Yeo
+Year: 2018
+Journal: Management Research Review
+Volume/Issue: 41(11)
+Pages: 1309–1335
+Summary:
+Using patent and regional-economic data, the study examines whether university innovation produces
+broader societal/economic effects. Regression results indicate a sustained relationship, but
+innovation alone is not sufficient to explain regional outcomes and different innovation measures
+do not behave identically. The study argues for attention to context and to the particular way
+university innovation is measured.
+[/PUBLICATION]
+
+[PUBLICATION 25]
+Title: Predicting Service Industry Performance Using Decision Tree Analysis
+Authors: Benjamin Yeo; Delvin Grant
+Year: 2018
+Journal: International Journal of Information Management
+Volume/Issue: 38(1)
+Pages: 288–300
+Summary:
+Using World Bank service-industry data and a technology-organisation-environment framing, the study
+uses decision trees to identify predictors of performance. Financial variables, particularly loans
+and credit, are more powerful predictors than ICT measures in the analysed data. Some ICT measures,
+such as website presence in particular regional contexts, do not produce the expected positive
+relationship. The paper cautions against assuming that ICT by itself drives service-industry growth.
+[/PUBLICATION]
+
+[PUBLICATION 26]
+Title: Mobilizing Location-Based Advertising: A Study of Effectiveness on Persuasion
+Authors: Hui-Fei Lin; Benjamin Yeo; Yen-Shen Chen
+Year: 2013
+Journal: Australian Journal of Business and Management Research
+Volume/Issue: 3(6)
+Pages: 15–29
+Summary:
+A 2x2x2 experiment studies mobile advertising format, location-based service and timeliness.
+Multimedia messaging combined with location and timely delivery improves several persuasion
+outcomes, including attention, interest, desire, brand attitude and purchase intention, although
+consumer irritation can mediate these effects. The study shows that mobile advertising
+effectiveness depends on execution and context rather than simply on sending a location-aware ad.
+[/PUBLICATION]
+
+[PUBLICATION 27]
+Title: Strategies for Effective Product Placements in Taiwanese Idol Dramas
+Authors: Pin-Chun Chen; Hui-Fei Lin; Benjamin Yeo
+Year: 2013
+Journal: American Journal of Business and Management
+Volume/Issue: 2(4)
+Pages: 357–369
+Summary:
+Combining experimental evidence with expert interviews, the study examines how product-placement
+exposure and connection to a programme's plot affect consumer responses in Taiwanese idol dramas.
+Higher exposure combined with stronger plot integration improves brand attitudes. The paper
+develops practical product-placement strategies that depend on how visibly and meaningfully the
+brand is incorporated into the programme.
+[/PUBLICATION]
+
+[PUBLICATION 28]
+Title: Driving the Knowledge Economy: The Impact of Regional Innovation Capacity
+Author: Benjamin Yeo
+Year: 2010
+Journal: Contemporary Management Research
+Volume/Issue: 6(1)
+Pages: 73–88
+Summary:
+Using U.S. metropolitan data from 1988–2007, the study examines the relationship between regional
+innovation capacity and economic performance. The influence of innovation becomes stronger after
+the dot-com era but remains relatively modest and varies across regional industrial/contextual
+conditions. The paper argues for a more focused, context-sensitive interpretation of innovation-led
+regional growth.
+[/PUBLICATION]
+
+[PUBLICATION 29]
+Title used by publisher/index: Environmental Influences on Gender in the IT Workforce
+CV wording: The Interaction Between Gender and Environmental Context: Influences on Women in the IT Workforce
+Authors: Eileen Trauth; Jeria Quesenberry; Benjamin Yeo
+Year: 2008
+Journal: The DATA BASE for Advances in Information Systems
+Volume/Issue: 39(1)
+Pages: 8–32
+DOI: 10.1145/1341971.1341975
+Summary:
+Drawing on a multi-year field study of women working in information technology in multiple U.S.
+regions, the paper examines how socio-cultural and environmental factors can operate as barriers or
+facilitators. The findings do not support a single universal set of environmental influences:
+regional conditions differ and individuals respond differently to those conditions. The study
+therefore treats gender and IT-workforce participation as situated phenomena.
+Source note:
+The CV and online publication record use different title wording. They appear to refer to the same
+article based on authorship, journal, year and bibliographic details.
+[/PUBLICATION]
+
+[PUBLICATION 30 — PROFESSIONAL-SITE RECORD]
+Title: Exploring the Situated Context of Knowledge Management in E-Government Development
+Authors: Haiyan Huang; Benjamin Yeo; Eileen Trauth
+Year: 2006
+Journal: International Journal of Advanced Media and Communications
+Summary:
+The paper examines the difficulty of transferring private-sector knowledge-management ideas
+directly into public-sector/e-government settings. Using the San Joaquin Valley as a contextual
+case, it argues for a situated approach that identifies social and institutional conditions shaping
+knowledge-management practice. The central point is that e-government knowledge management must be
+understood within its local societal context.
+Source note:
+This article is listed on Benjamin Yeo's professional website but not in the pasted CV journal list.
+Volume/issue metadata differs between the professional site and publisher records, so the knowledge
+base deliberately does not resolve that discrepancy without further confirmation.
+[/PUBLICATION]
+
+============================================================
+BOOK CHAPTERS
+============================================================
+
+- Yeo, Benjamin (2018). "Information Technology Issues in Taiwan." In The World IT Project:
+  Global Issues in Information Technology. World Scientific – Now Publishers Series in Business,
+  pp. 421–434.
+- Yeo, Benjamin (2014). "Knowledge-Based Economic Growth from the Social Context of Information
+  Technology." In Approaches and Processes for Managing the Economics of Information Systems,
+  pp. 309–323.
+- Yeo, Benjamin (2011). "From Information Technology to Social Technology: Opportunities and
+  Challenges in the Knowledge Economy." In Handbook of Research on Social Computing Theory and
+  Practice: Interdisciplinary Approaches, pp. 1–18.
+- Yeo, Benjamin and Eileen Trauth (2009). "The Call for Transformational Governance in the
+  Knowledge Economy." In Handbook of Research on ICT-Enabled Transformational Government:
+  A Global Perspective, pp. 271–290.
+- Eileen Trauth, Haiyan Huang, Allison Morgan, Jeria Quesenberry and Benjamin Yeo (2006).
+  "Investigating Diversity in the Global IT Workforce: An Analytical Framework." In IT Workers:
+  Human Capital Issues in a Knowledge-Based Environment.
+- Indrajit Banerjee and Benjamin Yeo (2003). "Internet and Democracy in Singapore: A Critical
+  Appraisal." In Rhetoric and Reality: The Internet Challenge for Democracy in Asia.
+
+============================================================
+BOOK REVIEWS
+============================================================
+
+- Yeo, Benjamin (2013). Review of E-Strategies for Technological Diffusion and Adoption:
+  National ICT Approaches for Socioeconomic Development. International Journal of
+  Sociotechnology and Knowledge Development, 5(4), 59–61.
+- Yeo, Benjamin (2012). Review of Sustainable Economic Development and the Influence of
+  Information Technologies: Dynamics of Knowledge Society Transformation. International Journal
+  of Sociotechnology and Knowledge Development, 4(3), 54–55.
+- Yeo, Benjamin (2012). Review of Knowledge-Based Development for Cities and Societies:
+  Integrated Multi-Level Approaches. International Journal of Sociotechnology and Knowledge
+  Development, 4(3), 52–53.
+- Annemijn Van Gorp and Benjamin Yeo (2003). Review of Open Networks Closed Regimes – The Impact
+  of the Internet on Authoritarian Rule. Journal of Communication, 56(1), 218–219.
+
+============================================================
+CONFERENCE / PROCEEDINGS RECORD
+============================================================
+
+Recent and selected conference work includes:
+- Yeo & Lee (2025), "Are We Ready for AI? Different Tales for Different Industries", 7th World
+  Symposium on Software Engineering, Okayama, Japan.
+- Lu, Lin & Yeo (2025), "Advertising Effect of Virtual Influencers", International Conference on
+  Economics and Social Sciences, Rome.
+- Yeo & Grant (2023), "Is Tech Investment Important in a Recession? Lessons from the Past",
+  National Business and Economics Society Conference, Puerto Rico.
+- Lu, Lin & Yeo (2023), "Exploring Virtual Mirrors in Advertising", Berlin.
+- Grant & Yeo (2022), "A Process Reengineering Method", IACIS, Warsaw.
+- Linardi, Lin & Yeo (2022), customised advertising/product attributes/self-esteem, ICA, Paris.
+- Grant & Yeo (2021), enterprise integration through service-oriented architectures, IACIS.
+- Lin, Lin & Yeo (2021), consumer-generated visual advertisements in social-media brand
+  communities, ICA.
+- Yeo, Serenko, Palvia & Jacks (2020), U.S. IT-work-exhaustion model and BRICS countries, GITMA.
+- Grant & Yeo (2019), technology investment and regional productivity/S-curve characteristics,
+  SIGGlobDev workshop at ICIS.
+- Lin, Lin & Yeo (2019), social-TV multitasking and cross-media advertising, ICA.
+- Yeo et al. (2018), IT job satisfaction in Taiwan, Japan and China, AMCIS.
+- Yeo (2018), continued economic importance of high-tech industries, AMCIS.
+- Lu & Yeo (2017), corporate social responsibility and risk taking, Osaka.
+- Yeo (2017), university technological innovation and commercialisation, AMCIS.
+- Yeo & Grant (2016), ICT, productivity and females in the workforce, ECIS workshop.
+- Yeo & Grant (2016), ICT and manufacturing-sector performance, ECIS workshop.
+- Yeo (2015), economic impact of human capital in information systems, AMCIS.
+- Yeo (2015), modelling innovation capacity and U.S. regions, GITMA.
+- Lin & Yeo (2013), location-based advertising and persuasion, Pacific Telecommunications Council.
+- Yeo (2011), knowledge-based growth beyond innovation, AMCIS.
+- Hung, Lu & Yeo (2010), telecommunications reform/network expansion in APEC countries, ICA.
+- Lu & Yeo (2009), China and lessons from the U.S. mortgage-market downturn, ACE.
+- Yeo (2008), regional innovation capacity and the knowledge economy, Business and Information
+  Conference, Seoul.
+- Yeo (2006), technological innovation and economic growth, ACE, Hong Kong.
+- Yeo (2006), ICT and sustainable development: university versus corporate investments, ITS.
+- Trauth, Quesenberry & Yeo (2005), environmental context and women in the IT workforce, ACM SIG MIS.
+- Trauth, Wong & Yeo (2004), cultural influences in developing a knowledge-based economy, ICKM.
+- Huang, Yeo & Trauth (2004), situated context of knowledge management in e-government, KMAP.
+- Yeo & Trauth (2004), societal influences on e-business potential in California's San Joaquin
+  Valley, IFIP 8.4.
+- Yeo & Banerjee (2003), internet and political participation in Singapore, ICA.
+- Yeo & Qian (2003), digital-television initiatives in the UK and U.S., ICA.
+- Banerjee & Yeo (2002), internet determinism and democratisation in Singapore, ICA.
+- Choi & Yeo (2002), media regulation and the role of the state, ICA.
+
+Grounding note
+--------------
+Conference papers sometimes precede or overlap with later journal publications. DCLXVI should not
+treat similarly titled conference and journal records as independent discoveries unless the archive
+provides evidence that they are substantively different.
