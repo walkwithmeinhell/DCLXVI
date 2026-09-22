@@ -36,10 +36,85 @@ read_knowledge_file <- function(path) {
   )
 }
 
-knowledge_base <- paste(
+knowledge_by_file <- setNames(
   vapply(knowledge_files, read_knowledge_file, character(1)),
-  collapse = "\n\n"
+  basename(knowledge_files)
 )
+
+select_knowledge <- function(history) {
+  recent <- tail(history, MEMORY_MESSAGES)
+  recent_text <- if (length(recent) == 0) {
+    ""
+  } else {
+    paste(vapply(recent, function(message) message$text, character(1)), collapse = "\n")
+  }
+
+  q <- tolower(recent_text)
+  selected <- "interview_notes.txt"
+
+  add_files <- function(files) {
+    selected <<- unique(c(selected, files))
+  }
+
+  if (grepl("education|degree|ph\\.?d|professor|career|background|position|seattle university|depaul|chapman|milken|who are you|about yourself", q, perl = TRUE)) {
+    add_files("profile.txt")
+  }
+
+  if (grepl("teach|teaching|class|course|student|lecture|syllabus|assignment|lab|project", q, perl = TRUE)) {
+    add_files(c("teaching.txt", "profile.txt"))
+  }
+
+  if (grepl("machine learning|data mining|knn|k-nearest|decision tree|random forest|regression|classification|clustering|cross-validation|cross validation|confusion matrix|roc|auc|naive bayes|neural network|pca|principal component|logistic|discriminant|association rule|recommender|model", q, perl = TRUE)) {
+    add_files("course_notes.txt")
+  }
+
+  if (grepl("excel|pivot|pivot table|solver|goal seek|vlookup|xlookup|spreadsheet", q, perl = TRUE)) {
+    add_files("excel_business_analytics.txt")
+  }
+
+  if (grepl("sql|database|erd|entity relationship|normalisation|normalization|join|primary key|foreign key|query", q, perl = TRUE)) {
+    add_files("databases_sql.txt")
+  }
+
+  if (grepl("mis|information systems|project management|big data|knowledge management|business process", q, perl = TRUE)) {
+    add_files("mis.txt")
+  }
+
+  if (grepl("cyber|cybersecurity|phishing|malware|data poisoning|turing test|llm|large language model|ai ethics|privacy|security", q, perl = TRUE)) {
+    add_files("cybersecurity_ai.txt")
+  }
+
+  if (grepl("research|scholarship|study|method|statistical analysis|findings", q, perl = TRUE)) {
+    add_files(c("research.txt", "profile.txt"))
+  }
+
+  if (grepl("publication|paper|article|journal|published|publish", q, perl = TRUE)) {
+    add_files(c("publications.txt", "research.txt", "profile.txt"))
+  }
+
+  if (grepl("music|musical|drum|drumming|band|metal|slayer|iron maiden|raining blood|hammerstroke|all gods kill|dissecting sanity|lightning swords|shepherd|song|track|youtube|instagram|blast beat|double kick|thrash|death metal|black metal", q, perl = TRUE)) {
+    add_files(c("music.txt", "metal_knowledge.txt"))
+  }
+
+  if (grepl("star wars|force|yeoda|yoda|jedi|sith|darth|vader|boba|lightsaber|padawan|palpatine|skywalker", q, perl = TRUE)) {
+    add_files("star_wars_yeoda.txt")
+  }
+
+  if (grepl("金庸|武俠|武侠|江湖|武林|降龍|降龙|郭靖|黃蓉|黄蓉|楊過|杨过|小龍女|小龙女|令狐|韋小寶|韦小宝|天龍八部|天龙八部|射鵰|射雕|神鵰|神雕|倚天|笑傲|鹿鼎|wuxia|jin yong", q, perl = TRUE)) {
+    add_files("wuxia_jinyong.txt")
+  }
+
+  if (grepl("tell me about yourself|who are you|what do you do", q, perl = TRUE)) {
+    add_files(c("profile.txt", "teaching.txt", "research.txt", "music.txt"))
+  }
+
+  if (length(selected) == 1) {
+    add_files(c("profile.txt", "teaching.txt", "research.txt", "music.txt"))
+  }
+
+  selected <- intersect(selected, names(knowledge_by_file))
+  paste(knowledge_by_file[selected], collapse = "\n\n")
+}
 
 # ------------------------------------------------------------
 # DCLXVI system prompt
@@ -150,7 +225,6 @@ system_prompt <- paste(
   "- You may summarise and discuss information contained in the archive normally.",
   "",
   "KNOWLEDGE ARCHIVE",
-  knowledge_base,
   sep = "\n"
 )
 
@@ -194,9 +268,12 @@ call_gemini <- function(history) {
     ":generateContent"
   )
 
+  selected_knowledge <- select_knowledge(recent)
+  request_system_prompt <- paste(system_prompt, selected_knowledge, sep = "\n")
+
   body <- list(
     systemInstruction = list(
-      parts = list(list(text = system_prompt))
+      parts = list(list(text = request_system_prompt))
     ),
     contents = contents,
     generationConfig = list(
