@@ -446,11 +446,7 @@ server <- function(input, output, session) {
     answer <- tryCatch(
       call_gemini(current),
       error = function(e) {
-        paste0(
-          "The archive is intact, but Gemini has chosen this moment for a technical solo. ",
-          "Please try again.\n\n",
-          "Technical detail: ", conditionMessage(e)
-        )
+        "Disturbed, the connection to the Force is. Try again shortly, you should."
       }
     )
 
